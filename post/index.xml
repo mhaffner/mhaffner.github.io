@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Matthew Haffner</title>
+    <link>https://mhaffner.github.io/post/</link>
+    <description>Recent content in Posts on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Matthew Haffner</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhaffner.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The development of shp2nosql</title>
+      <link>https://mhaffner.github.io/post/shp2nosql/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/shp2nosql/</guid>
+      <description>In the early days of my dissertation, I was collecting Twitter data but had no idea how to store, manage, or query these data. First, I tried PostgreSQL with PostGIS. I had been wanting to learn PostGIS anyway, not to mention a suitable alternative to MS SQL Server. After learning PostGIS&amp;rsquo;s intricacies, I soon found it was unsuitable for my needs. After some searching, I stumbled upon MongoDB.
+Subsequently, I started using MongoDB to handle my data.</description>
+    </item>
+    
+    <item>
+      <title>The Burnination of the Wordpress</title>
+      <link>https://mhaffner.github.io/post/first-post/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/first-post/</guid>
+      <description>I&amp;rsquo;m currently in the process of moving my blog to GitHub pages. I&amp;rsquo;m doing this for several reasons:
+(1) Ease of creating/publishing posts On my first few Wordpress posts I typed content directly in Wordpress. I didn&amp;rsquo;t mind this at the time, but eventually I started using Emacs org-mode for all writing, including research papers, blog posts, etc. After a semi-debacle of copying an html-exported org file into Wordpress, I never posted again.</description>
+    </item>
+    
+  </channel>
+</rss>
