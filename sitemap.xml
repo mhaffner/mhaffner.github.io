@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://mhaffner.github.io/post/arch-linux/</loc>
+      <lastmod>2017-07-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://mhaffner.github.io/publication/lbsm-survey/</loc>
       <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     </url>
@@ -96,6 +105,16 @@
     
     <url>
     
+      <loc>https://mhaffner.github.io/tags/arch-linux/</loc>
+      <lastmod>2017-07-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://mhaffner.github.io/tags/bash/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -127,6 +146,16 @@
     
       <loc>https://mhaffner.github.io/tags/github/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/gnu/linux/</loc>
+      <lastmod>2017-07-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
