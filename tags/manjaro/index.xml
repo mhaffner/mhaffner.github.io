@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gnu/Linux on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/tags/gnu/linux/</link>
-    <description>Recent content in Gnu/Linux on Matthew Haffner</description>
+    <title>Manjaro on Matthew Haffner</title>
+    <link>https://mhaffner.github.io/tags/manjaro/</link>
+    <description>Recent content in Manjaro on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Matthew Haffner</copyright>
     <lastBuildDate>Thu, 13 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/gnu/linux/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/manjaro/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>

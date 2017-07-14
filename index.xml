@@ -11,12 +11,21 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Why I switched from Ubuntu to Manjaro (Arch Linux)</title>
+      <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>
       <link>https://mhaffner.github.io/post/arch-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mhaffner.github.io/post/arch-linux/</guid>
       <description>
+
+&lt;p&gt;&lt;strong&gt;EDIT: I&amp;rsquo;ve made several modifications to the original piece based on helpful
+comments from reddit users &lt;em&gt;newworkaccount&lt;/em&gt;, &lt;em&gt;iKnitYogurt&lt;/em&gt;, &lt;em&gt;jprada&lt;/em&gt;, and
+&lt;em&gt;ThisTimeIllSucceed&lt;/em&gt; on the
+thread
+&lt;a href=&#34;https://www.reddit.com/r/ManjaroLinux/comments/6n6mao/why_i_switched_from_ubuntu_to_manjaro/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+View the original post in its full glory/shame
+on
+&lt;a href=&#34;https://github.com/mhaffner/personal-website-hugo/blob/master/content/post/arch-linux.md&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Like everyone else, when I first started using GNU/Linux I gravitated toward
 Ubuntu.  While using Ubuntu, I sought to try other distributions and briefly
@@ -29,26 +38,31 @@ packages from source is not the end of the world, but if there was a
 distribution/package manager that had a workable version (for my purposes) of
 all the packages I needed, wouldn&amp;rsquo;t that be worth pursuing?&lt;/p&gt;
 
-&lt;p&gt;Enter Arch Linux. Since using Arch, I&amp;rsquo;m not sure I&amp;rsquo;ve had to build anything from
-source; I&amp;rsquo;ve installed everything with a simple one-liner with &lt;code&gt;pacman&lt;/code&gt; or
-&lt;code&gt;yaourt&lt;/code&gt;. For testing purposes (and for the sake of (re)installing systems
-often) it&amp;rsquo;s nice to have reproducible methods of software installation. Aside
-from this, my chosen distribution of Arch Linux, Manjaro, has other really nice
-features rendering it indispensable. Ubuntu has some good things going for it,
-and for it I do still hold some reverence as my first true GNU/Linux experience.
-The purple terminal sparks an incredible amount of nostalgia every time I see it
-on someone else&amp;rsquo;s system.&lt;/p&gt;
+&lt;p&gt;Enter the Arch Linux family. Since using Manjaro (technically an Arch Linux
+derivative, not Arch Linux itself nor an Arch distribution; thanks to reddit
+users &lt;em&gt;newworkaccount&lt;/em&gt; and &lt;em&gt;iKnitYogurt&lt;/em&gt; for clarifying this), I&amp;rsquo;m not sure I&amp;rsquo;ve
+had to build anything from source manually; I&amp;rsquo;ve installed everything with a
+simple one-liner with &lt;code&gt;pacman&lt;/code&gt; or &lt;code&gt;yaourt&lt;/code&gt;. For testing purposes (and for the
+sake of (re)installing systems often) it&amp;rsquo;s nice to have reproducible methods of
+software installation. Aside from this, Manjaro has other really nice features
+rendering it indispensable. Ubuntu has some good things going for it, and for it
+I do still hold some reverence as my first true GNU/Linux experience. The purple
+terminal sparks an incredible amount of nostalgia every time I see it on someone
+else&amp;rsquo;s system.&lt;/p&gt;
 
 &lt;p&gt;But I can&amp;rsquo;t go back.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; &lt;em&gt;This is an opinionated piece, and there are likely some solutions
-to the problems I perceive with Ubuntu. Nevertheless, Arch Linux has seemed much
+to the problems I perceive with Ubuntu. Nevertheless, Manjaro has seemed much
 more straightforward to me, and at its core, I believe it&amp;rsquo;s more user-friendly.
-If I&amp;rsquo;m being unfair to Ubuntu and/or you know of solutions to my problems, I&amp;rsquo;d
-love to hear about it! Drop me a comment&lt;sup&gt;1&lt;/sup&gt;.&lt;/em&gt;&lt;/p&gt;
+I do not intend this piece to be authoritative; rather, it is a description of
+my journey into the Arch-related world from Ubuntu (thanks to reddit user jprada
+for pointing out how this could be clarified). If I&amp;rsquo;m being unfair to Ubuntu
+and/or you know of solutions to my problems, I&amp;rsquo;d love to hear about it! Drop me
+a comment&lt;sup&gt;1&lt;/sup&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;The package manager for Arch Linux is called &lt;code&gt;pacman&lt;/code&gt;, and installing multiple
-packages can be accomplished with&lt;/p&gt;
+&lt;p&gt;The package manager for Manjaro (and Arch Linux) is called &lt;code&gt;pacman&lt;/code&gt;. Installing
+multiple packages can be accomplished with&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pacman -S package1 package2 package3
 &lt;/code&gt;&lt;/pre&gt;
@@ -62,45 +76,50 @@ packages can be accomplished with&lt;/p&gt;
 lines long for each package. Multi-line solutions were common for me as I often
 need bleeding edge packages, and most default package versions were not up to
 date enough. This process could be automated in a script, but the keys and
-repositories can change. I&amp;rsquo;ve never had to add a repository manually with Arch
-since software in the community repositories (installed with &lt;code&gt;yaourt&lt;/code&gt;) have
-everything I need that the official repositories lack. Beyond this, removing
-packages seems to be much easier with &lt;code&gt;pacman&lt;/code&gt; through&lt;/p&gt;
+repositories can change. I&amp;rsquo;ve never had to add a repository manually with
+Manjaro since software in the community repositories (installed with &lt;code&gt;yaourt&lt;/code&gt;)
+have everything I need that the official repositories lack. Beyond this,
+removing packages seems to be much easier with &lt;code&gt;pacman&lt;/code&gt; through&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;pacman -R package
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;On the other hand, &lt;code&gt;apt&lt;/code&gt; uses a combination of &lt;code&gt;purge&lt;/code&gt; and &lt;code&gt;remove&lt;/code&gt;. I&amp;rsquo;m not
-really sure which comes first or why, and I&amp;rsquo;m not really sure what these
-commands fundamentally do. I&amp;rsquo;ve so often received errors with &lt;code&gt;apt-get update&lt;/code&gt;
-after removing packages that I&amp;rsquo;m left wondering if I&amp;rsquo;ve ever used these commands
-correctly.&lt;/p&gt;
+&lt;p&gt;Reddit user &lt;em&gt;ThisTimeIllSucceed&lt;/em&gt; actually suggests using&lt;/p&gt;
 
-&lt;p&gt;Certainly the argument in favor of Ubuntu (and against Arch Linux) is that
-packages are more stable. This is probably true on a package-to-package basis,
-but I&amp;rsquo;ve had much more difficulty keeping the OS stable &lt;em&gt;as a whole&lt;/em&gt; with Ubuntu
-than with Arch Linux. A large part of this has to do with distribution upgrades,
-which have been a pain for me on Ubuntu but &lt;strong&gt;don&amp;rsquo;t exist&lt;/strong&gt; in Arch Linux, which
-operates on a rolling release. Using the command &lt;code&gt;pacman -Syu&lt;/code&gt; upgrades all on
-packages on the system, meaning that you have the most up-to-date version of the
-OS once you upgrade packages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pacman -Rns package
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This feature in Arch Linux (or the lack thereof in Ubuntu) was the ultimate
-tipping point for me. A few months ago my graphics card died, so I bought a new
-one, an AMD RX 470. I could not &lt;em&gt;for the life of me&lt;/em&gt; get it working in
-Ubuntu 14. After doing some research (after I bought the card, of course), I
-discovered that AMD cards don&amp;rsquo;t always work well with GNU/Linux. After trying a
-plethora of options, I decided that upgrading from 14 to 16 might be my best
-shot. Aside from not solving my graphics card issue, this upgrade resulted in a
-whole host of packages not working correctly&lt;sup&gt;2&lt;/sup&gt;. At this point I
-decided to try Arch Linux, which has a reputation of working with a wide range
-of (and often newest) hardware.&lt;/p&gt;
+&lt;p&gt;which removes any dependencies not used by another package and any config files
+for the package. On the other hand, &lt;code&gt;apt&lt;/code&gt; uses a combination of &lt;code&gt;purge&lt;/code&gt; and
+&lt;code&gt;remove&lt;/code&gt;. I&amp;rsquo;m not really sure which comes first or why, and I&amp;rsquo;m not really sure
+what these commands fundamentally do. I&amp;rsquo;ve so often received errors with
+&lt;code&gt;apt-get update&lt;/code&gt; after removing packages that I&amp;rsquo;m left wondering if I&amp;rsquo;ve ever
+used these commands correctly.&lt;/p&gt;
 
-&lt;p&gt;To be precise, I&amp;rsquo;m using Manjaro, which is an Arch Linux derivative. There are
-plenty of other Arch Linux spin-offs including Antergos, Apricity, and ArchBang.
-Pure Arch Linux is a bit too stripped down for my liking; Manjaro seems like a
-good balance between a simple, highly configurable system and one that allows
-you to hit the ground running.&lt;/p&gt;
+&lt;p&gt;Certainly the argument in favor of Ubuntu (and against Arch Linux-like
+derivatives) is that packages are more stable. This is probably true on a
+package-to-package basis, but I&amp;rsquo;ve had much more difficulty keeping the OS
+stable &lt;em&gt;as a whole&lt;/em&gt; with Ubuntu than with Manjaro. A large part of this has to
+do with distribution upgrades, which have been a pain for me on Ubuntu but
+&lt;strong&gt;don&amp;rsquo;t exist&lt;/strong&gt; in Manjaro, which operates on a rolling release. Using the
+command &lt;code&gt;pacman -Syu&lt;/code&gt; upgrades all on packages on the system, meaning that you
+have the most up-to-date version of the OS once you upgrade packages.&lt;/p&gt;
+
+&lt;p&gt;This feature in Manjaro (or the lack thereof in Ubuntu) was the ultimate tipping
+point for me. A few months ago my graphics card died, so I bought a new one, an
+AMD RX 470. I could not &lt;em&gt;for the life of me&lt;/em&gt; get it working in Ubuntu 14. After
+doing some research (after I bought the card, of course), I discovered that AMD
+cards don&amp;rsquo;t always work well with GNU/Linux. After trying a plethora of options,
+I decided that upgrading from 14 to 16 might be my best shot. Aside from not
+solving my graphics card issue, this upgrade resulted in a whole host of
+packages not working correctly&lt;sup&gt;2&lt;/sup&gt;. At this point I decided to try
+various Arch Linux derivatives, which have a reputation of working with a wide
+range of (and often newest) hardware.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of other Arch Linux derivatives including Antergos, Apricity,
+and ArchBang. Pure Arch Linux is a bit too stripped down for my liking; Manjaro
+seems like a good balance between a simple, highly configurable system and one
+that allows you to hit the ground running.&lt;/p&gt;
 
 &lt;p&gt;Over time, I&amp;rsquo;ve come to the conclusion that no GNU/Linux distribution is
 perfect. I still have issues with Manjaro from time to time (explained at the
@@ -164,16 +183,17 @@ sudo systemctl start mongodb
 
 &lt;p&gt;&lt;strong&gt;Random rambling&lt;/strong&gt;: &lt;em&gt;Some of difference in installation of dependencies is due
 to the suite of pre-packaged software that comes with Manjaro; it comes with
-&lt;code&gt;curl&lt;/code&gt; and &lt;code&gt;java&lt;/code&gt; whereas Ubuntu does not. This is somewhat counter-intuitive
-because Arch Linux generally takes a DIY approach - The developers seek to
-create an non-bloated experience, avoiding design decisions that force users
-down a specific path. In fact, it seems as though the mere concept of an
-Arch-based &amp;ldquo;distribution&amp;rdquo; deviates from this philosophy, but if developers make
-(a) mostly good design decisions, (b) that I can change if I want, &amp;copy; that help
-me get a system up and running much faster than I could with a bare bones
-installation&amp;hellip; then I&amp;rsquo;m okay with this&lt;/em&gt;.&lt;/p&gt;
+&lt;code&gt;curl&lt;/code&gt; and &lt;code&gt;java&lt;/code&gt; whereas Ubuntu does not. The inclusion of these extra packages
+is an example of how Manjaro deviates from the pure Arch Linux philosophy, which
+generally takes a DIY approach - The developers seek to create an non-bloated
+experience, avoiding design decisions that force users down a specific path.
+(This is not to suggest that Ubuntu would be expected to contain everything that
+Arch Linux contains, of course). However, if Manjaro developers make (a) mostly
+good design decisions, (b) that I can change if I want, &amp;copy; that help me get a
+system up and running much faster than I could with a bare bones installation&amp;hellip;
+then I&amp;rsquo;m okay with this&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;It&amp;rsquo;s possible that users of other Arch Linux distributions would need something
+&lt;p&gt;It&amp;rsquo;s possible that users of other Arch Linux derivatives would need something
 slightly different to install dependencies for &lt;code&gt;shp2nosql&lt;/code&gt;, but the general
 point still stands: many one liners with &lt;code&gt;pacman&lt;/code&gt; are analogous to multi-step
 processes with &lt;code&gt;apt&lt;/code&gt;. This includes the installation of &lt;code&gt;QGIS&lt;/code&gt;, &lt;code&gt;R&lt;/code&gt;, and
@@ -185,12 +205,13 @@ installation, but there are other notable features of Manjaro (and other
 Arch-based distributions) that are worth mentioning here:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: the Arch Wiki is incredible, and 95%+ of my questions are
-answered here. I definitely cannot say the same for Ubuntu.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: the Arch Wiki is incredible, much of it applies to Manjaro,
+and 95%+ of my questions are answered here. I definitely cannot say the same
+for Ubuntu.&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Kernel installation&lt;/strong&gt;: Installing and removing kernels is trivial through the System
-Settings Module (this ended up being part of the solution to using my new
-GPU).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Kernel installation&lt;/strong&gt;: Installing and removing kernels is trivial through
+the System Settings Module (this ended up being part of the solution to using
+my new GPU).&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Greater privacy/freedom&lt;/strong&gt;: Many Ubuntu users may not even realize that their OS
 contains
@@ -198,8 +219,9 @@ contains
 Searches in dashboard are transmitted to Canonical, and the company profits
 when a user buys a product from Amazon using the Amazon App.&lt;sup&gt;3,4,5&lt;/sup&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Less bloated-ness&lt;/strong&gt;: Manjaro just feels less bloated. It has no Software Center,
-for instance, and feels snappier. Knowing that Canonical transmits search data
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Less bloated-ness&lt;/strong&gt;: Manjaro (which is certainly more bloated than pure
+Arch) feels much less bloated than Ubuntu. It has no Software Center, for
+instance, and feels snappier. Knowing that Canonical transmits search data
 might explain some of this new found snappiness&amp;hellip;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Other various things &lt;em&gt;just work&lt;/em&gt;&lt;/strong&gt;: For a while, my test of a well-working
