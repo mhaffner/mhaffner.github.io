@@ -8,7 +8,75 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Matthew Haffner</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://mhaffner.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://mhaffner.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/about/</guid>
+      <description>Biography I&amp;rsquo;m currently a PhD Candidate in the Department of Geography at Oklahoma State University. I&amp;rsquo;m also a Graduate Research Assistant, working with the Oklahoma Historical Society. Outside of my research interests, I have a passion for Emacs/Spacemacs, GNU/Linux, Free Software, music, Oklahoma State sports, and commuter cycling. These do inevitably spill into research in various ways, of course! Check out my CV here.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>https://mhaffner.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>https://mhaffner.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://mhaffner.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://mhaffner.github.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mhaffner.github.io/home/teaching/</link>
+      <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/teaching/</guid>
+      <description>At Oklahoma State I&amp;rsquo;ve been the instructor of record in:
+ GEOG-1113: Introduction to Cultural Geography GEOG-1114: Introduction to Physical Geography (lecture) GEOG-1114: Introduction to Physical Geography (lab)  I&amp;rsquo;ve also taught periodically in:
+ GEOG-2344: Digital Tools for Environmental Exploration GEOG-3123: Urban Geography  I&amp;rsquo;ve been a guest speaker in:
+ MATH-2890: High Performance Computing in Mathematics GEOG-5001: Professional Development in Geography GEOG-4383: Intro to GIS Programming  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mhaffner.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
