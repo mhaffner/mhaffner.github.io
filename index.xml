@@ -361,6 +361,15 @@ found &lt;a href=&#34;https://mhaffner.github.io/presentations/shp2nosql.html&#3
     </item>
     
     <item>
+      <title>The development of shp2nosql: Command line tools for spatial data and NoSQL databases</title>
+      <link>https://mhaffner.github.io/talk/shp2nosql/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Burnination of the Wordpress</title>
       <link>https://mhaffner.github.io/post/first-post/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
@@ -411,10 +420,10 @@ push the changes to this repository when I update my CV.
     
     <item>
       <title>Example Talk</title>
-      <link>https://mhaffner.github.io/talk/example/</link>
+      <link>https://mhaffner.github.io/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/example/</guid>
+      <guid>https://mhaffner.github.io/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

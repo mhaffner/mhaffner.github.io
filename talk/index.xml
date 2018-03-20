@@ -13,11 +13,20 @@
     
     
     <item>
+      <title>The development of shp2nosql: Command line tools for spatial data and NoSQL databases</title>
+      <link>https://mhaffner.github.io/talk/shp2nosql/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Example Talk</title>
-      <link>https://mhaffner.github.io/talk/example/</link>
+      <link>https://mhaffner.github.io/talk/example-talk/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/example/</guid>
+      <guid>https://mhaffner.github.io/talk/example-talk/</guid>
       <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
     </item>
     
