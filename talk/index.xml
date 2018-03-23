@@ -13,21 +13,30 @@
     
     
     <item>
-      <title>The development of shp2nosql: Command line tools for spatial data and NoSQL databases</title>
-      <link>https://mhaffner.github.io/talk/shp2nosql/</link>
-      <pubDate>Wed, 05 Apr 2017 00:00:00 +0000</pubDate>
+      <title>A spatial analysis of non-English Twitter activity in Houston, TX</title>
+      <link>https://mhaffner.github.io/talk/non-english-tweets/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
+      <guid>https://mhaffner.github.io/talk/non-english-tweets/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>https://mhaffner.github.io/talk/example-talk/</link>
+      <title>Location-based social media behaviors and perception: Views of university students</title>
+      <link>https://mhaffner.github.io/talk/lbsm-survey/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://mhaffner.github.io/talk/lbsm-survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The development of shp2nosql: Command line tools for spatial data and NoSQL databases</title>
+      <link>https://mhaffner.github.io/talk/shp2nosql/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/example-talk/</guid>
-      <description>Embed your slides or video here using shortcodes. Further details can easily be added using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
+      <description></description>
     </item>
     
   </channel>
