@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Geojson on Matthew Haffner</title>
+    <title>GeoJSON on Matthew Haffner</title>
     <link>https://mhaffner.github.io/tags/geojson/</link>
-    <description>Recent content in Geojson on Matthew Haffner</description>
+    <description>Recent content in GeoJSON on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Matthew Haffner</copyright>
