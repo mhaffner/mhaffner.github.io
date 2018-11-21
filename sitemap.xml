@@ -169,7 +169,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/gnu/linux/</loc>
+      <loc>https://mhaffner.github.io/tags/gnu-linux/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -249,16 +249,6 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/shp2snoql/</loc>
-      <lastmod>2017-07-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://mhaffner.github.io/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -271,6 +261,16 @@
     
       <loc>https://mhaffner.github.io/tags/wordpress/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/shp2snoql/</loc>
+      <lastmod>2017-07-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

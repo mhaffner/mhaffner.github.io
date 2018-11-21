@@ -41,10 +41,10 @@
     
     <item>
       <title>GNU/Linux</title>
-      <link>https://mhaffner.github.io/tags/gnu/linux/</link>
+      <link>https://mhaffner.github.io/tags/gnu-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/gnu/linux/</guid>
+      <guid>https://mhaffner.github.io/tags/gnu-linux/</guid>
       <description></description>
     </item>
     
@@ -94,20 +94,20 @@
     </item>
     
     <item>
-      <title>Shp2snoql</title>
-      <link>https://mhaffner.github.io/tags/shp2snoql/</link>
-      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://mhaffner.github.io/tags/shp2snoql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Wordpress</title>
       <link>https://mhaffner.github.io/tags/wordpress/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mhaffner.github.io/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shp2snoql</title>
+      <link>https://mhaffner.github.io/tags/shp2snoql/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/shp2snoql/</guid>
       <description></description>
     </item>
     
