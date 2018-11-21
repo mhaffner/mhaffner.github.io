@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
-    <lastBuildDate>Mon, 05 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mhaffner.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter</title>
+      <link>https://mhaffner.github.io/publication/blm-tweets/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/publication/blm-tweets/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A spatial analysis of non-English Twitter activity in Houston, TX</title>
