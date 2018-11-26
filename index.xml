@@ -56,7 +56,8 @@ the one above. This becomes tedious since most materials I create for courses
 files, and I have to open these all the time. I could open the &lt;em&gt;.html&lt;/em&gt; file in
 Emacs instead and then use&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;:! firefox %&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:! firefox %
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;but the .html files created by &lt;code&gt;org-reveal&lt;/code&gt; (a very nice package) are quite
 large and cause Emacs to hang. So, I sought to create something that would (a)
@@ -64,27 +65,26 @@ get the full file path to the current buffer and strip the extension, (b) slap
 &amp;ldquo;.html&amp;rdquo; to the end of this string, (c) open the file in Firefox, and (d)
 assign this function to a keybinding. Here is what I came up with:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;(defun open-html-firefox ()
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-EmacsLisp&#34; data-lang=&#34;EmacsLisp&#34;&gt;(defun open-html-firefox ()
 
   (interactive)
 
-  ; create the new string of the file to open
-  (setq file-string (concat (file-name-sans-extension (buffer-file-name)) &amp;quot;.html&amp;quot;))
+  &lt;span style=&#34;color:#75715e&#34;&gt;; create the new string of the file to open&lt;/span&gt;
+  (setq file-string (&lt;span style=&#34;color:#a6e22e&#34;&gt;concat&lt;/span&gt; (file-name-sans-extension (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-file-name&lt;/span&gt;)) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.html&amp;#34;&lt;/span&gt;))
 
-  ; execute command
-  (shell-command (concat &amp;quot;firefox &amp;quot; file-string)))
+  &lt;span style=&#34;color:#75715e&#34;&gt;; execute command&lt;/span&gt;
+  (shell-command (&lt;span style=&#34;color:#a6e22e&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;firefox &amp;#34;&lt;/span&gt; file-string)))
 
 
-  ; assign this function to a keybinding in markdown mode
-  (add-hook &#39;markdown-mode-hook
+  &lt;span style=&#34;color:#75715e&#34;&gt;; assign this function to a keybinding in markdown mode&lt;/span&gt;
+  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;markdown-mode-hook&lt;/span&gt;
     (lambda ()
-      (local-set-key (kbd &amp;quot;C-c f&amp;quot;) &#39;open-html-firefox)))
+      (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c f&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;open-html-firefox&lt;/span&gt;)))
 
-  ; assign this function to a keybinding in org mode
-  (add-hook &#39;org-mode-hook
+  &lt;span style=&#34;color:#75715e&#34;&gt;; assign this function to a keybinding in org mode&lt;/span&gt;
+  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-mode-hook&lt;/span&gt;
             (lambda ()
-              (local-set-key (kbd &amp;quot;C-c f&amp;quot;) &#39;open-html-firefox)))
-&lt;/code&gt;&lt;/pre&gt;
+              (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c f&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;open-html-firefox&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In my dotfile, the function has documentation, but I removed it for this post
 since I&amp;rsquo;m explaining everything in detail. The function itself is quite short
@@ -94,8 +94,7 @@ file) in Firefox with a command.&lt;/p&gt;
 
 &lt;p&gt;Originally I was using&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;(setq file-string (replace-regexp-in-string &amp;quot;\.Rmd&amp;quot; &amp;quot;.html&amp;quot; (buffer-file-name)))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt; (setq file-string (replace-regexp-in-string &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\.Rmd&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.html&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-file-name&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;to create the string, but this obviously only works for .Rmd files. Also, I was
 not initially aware of the &lt;code&gt;file-name-sans-extension&lt;/code&gt; function which turned out
@@ -134,20 +133,19 @@ x = &#39;Emacs Rocks&#39; # i hope this phrase isn&#39;t trademarked
 &lt;p&gt;Manually typing &lt;code&gt;#+BEGIN_SRC...&lt;/code&gt;, etc. etc. is tedious, so I simply created a
 function and keybinding to automate this. Here it is:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;(defun add-src-elements ()
-  &amp;quot;Make adding #+BEGIN/END _SRC elements easier&amp;quot;
-  (interactive)
-  (insert &amp;quot;#+BEGIN_SRC\n#+END_SRC&amp;quot;)
-  (forward-line -1)
-  (evil-append-line 1)
-  (insert &amp;quot; &amp;quot;))
-
-; set it to a keybinding
-(with-eval-after-load &#39;org
-  (add-hook &#39;org-mode-hook
-            (lambda ()
-              (local-set-key (kbd &amp;quot;C-c s&amp;quot;) &#39;add-src-elements)))
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(defun add-src-elements ()
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Make adding #+BEGIN/END _SRC elements easier&amp;#34;&lt;/span&gt;
+    (interactive)
+    (&lt;span style=&#34;color:#a6e22e&#34;&gt;insert&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#+BEGIN_SRC\n#+END_SRC&amp;#34;&lt;/span&gt;)
+    (&lt;span style=&#34;color:#a6e22e&#34;&gt;forward-line&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;)
+    (evil-append-line &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+    (&lt;span style=&#34;color:#a6e22e&#34;&gt;insert&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;))
+    
+  &lt;span style=&#34;color:#75715e&#34;&gt;; set it to a keybinding&lt;/span&gt;
+  (with-eval-after-load &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org&lt;/span&gt;
+    (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-mode-hook&lt;/span&gt;
+              (lambda ()
+                (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c s&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add-src-elements&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;My dotfile looks a little different since I have other &lt;code&gt;org-mode&lt;/code&gt; hooks, but
 this is the gist of it. Again, the internet insists I use
