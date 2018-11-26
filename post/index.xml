@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Doing useful things with Emacs Lisp</title>
+      <link>https://mhaffner.github.io/post/useful-emacs-lisp/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/useful-emacs-lisp/</guid>
+      <description>I wrote this post to demonstrate how I&amp;rsquo;m using Emacs Lisp to do some useful things. This is post aimed at beginners and those interested (e.g., Vim users potentially) in how Emacs can be extended to automate some simple tasks. Advanced users will probably have more elegant (or more complete) solutions than what I have here,1 so with that in mind I will focus more on the motivations, thought processes, and progressions I&amp;rsquo;ve gone through with these functions.</description>
+    </item>
+    
+    <item>
       <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>
       <link>https://mhaffner.github.io/post/arch-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
