@@ -140,6 +140,14 @@
     
     <url>
     
+      <loc>https://mhaffner.github.io/draft/osu-fb-recruiting/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://mhaffner.github.io/slides/</loc>
     </url>
     
@@ -179,6 +187,15 @@
     <url>
     
       <loc>https://mhaffner.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://mhaffner.github.io/draft/</loc>
       <priority>0</priority>
     </url>
     
