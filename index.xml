@@ -11,6 +11,129 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pi-hole troubleshooting: An overview of my recent installation</title>
+      <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/pi-hole-troubleshooting/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;My first Pi-hole installation was a pain mostly due to self-inflicted
+issues. That said there are a few disjointed steps, and my lack of
+networking knowledge will necessitate a future reference to more a
+in-depth guide than what&amp;rsquo;s currently available. This post serves as
+self-documentation on what went wrong so that I (or others) can avoid
+problems in future installations.&lt;/p&gt;
+
+&lt;h1 id=&#34;network-issues&#34;&gt;Network issues&lt;/h1&gt;
+
+&lt;p&gt;After initial installation, I could not access the Pi-hole admin page
+nor the internet. Soon after, I couldn&amp;rsquo;t access wifi on any of my
+devices. I&amp;rsquo;m not 100% sure what the problem was, but I have a hunch -
+After installation I needed to access my router&amp;rsquo;s configuration page,
+but I couldn&amp;rsquo;t remember how. This has happened before, and I just
+needed to figure out my router&amp;rsquo;s brand and Google &amp;ldquo;Access router
+configuration for &amp;lt;brand&amp;gt;&amp;rdquo;. When I did this, I think I may have hit
+the wifi button on router (it doesn&amp;rsquo;t help that my modem sits atop my
+router) and unknowingly &lt;strong&gt;turned the wifi off manually&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;After a couple hours of troubleshooting, I uninstalled Pi-hole only to
+later discover that that the wifi button on the router had been
+switched off. However, I still could not access the internet on my Pi!
+Here is what ended up enabling me to connect to the internet again:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;From this &lt;a href=&#34;https://www.raspberrypi.org/forums/viewtopic.php?t=158142&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;, I
+put the following in &lt;code&gt;/etc/network/interfaces&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-config&#34; data-lang=&#34;config&#34;&gt;    auto lo
+    iface lo inet loopback
+    
+    auto eth0
+    iface eth0 inet manual
+    
+    allow-hotplug wlan0
+    iface wlan0 inet manual
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+    
+    allow-hotplug wlan1
+    iface wlan1 inet manual
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;And from this
+&lt;a href=&#34;https://www.raspberrypi.org/forums/viewtopic.php?t=158142&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;, I put the
+following in &lt;code&gt;/etc/dhcpcd.conf&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-config&#34; data-lang=&#34;config&#34;&gt;    # A sample configuration for dhcpcd.
+    # See dhcpcd.conf(5) for details.
+    
+    # Allow users of this group to interact with dhcpcd via the control socket.
+    #controlgroup wheel
+    
+    # Inform the DHCP server of our hostname for DDNS.
+    hostname
+    
+    # Use the hardware address of the interface for the Client ID.
+    clientid&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Through the Pi-hole installation a bunch of options were inserted into
+&lt;code&gt;/etc/dhcpcd.conf&lt;/code&gt;, and I think this was the root of the issue (of not
+being able to connect to the internet).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;After this I ran&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;sudo ifdown wlan0
+sudo ifup wlan0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and I was able to connect to the web again.&lt;/p&gt;
+
+&lt;p&gt;Yet, my re-install of Pi-hole failed, and I found a working solution
+through an &lt;a href=&#34;https://github.com/pi-hole/pi-hole/issues/1919&#34; target=&#34;_blank&#34;&gt;issue on GitHub&lt;/a&gt;. I uninstalled a few things with&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;    sudo apt-get remove lighttpd dnsmasq dnsmasq-base&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and removed &lt;code&gt;/etc/pihole/&lt;/code&gt;, &lt;code&gt;/etc/.pihole&lt;/code&gt;, and &lt;code&gt;/var/www/html/admin&lt;/code&gt;.
+I then re-installed Pi-hole successfully and confirmed that I could
+still access wifi (both from my Pi and from other devices).&lt;/p&gt;
+
+&lt;h1 id=&#34;post-installation&#34;&gt;Post installation&lt;/h1&gt;
+
+&lt;p&gt;Next, I followed &lt;a href=&#34;https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245&#34; target=&#34;_blank&#34;&gt;Step 3&lt;/a&gt; from the official guide titled &amp;ldquo;How do I
+configure my devices to use Pi-hole as their DNS server?&amp;ldquo;, but my
+DHCP/DNS settings look quite different from the guide. I have a
+Netgear router, and from its configuration page I had to make changes
+in two locations.&lt;/p&gt;
+
+&lt;p&gt;Since I did not modify the default static IP address during
+installation and was met with a warning about potential IP address
+conflicts, I had to add an address reservation under &lt;code&gt;ADVANCED -&amp;gt; LAN
+Setup&lt;/code&gt; for the Pi. In my case, this was &lt;code&gt;192.168.1.3&lt;/code&gt;. Then, I had to
+change the DNS from one automatically configured by the ISP to newly
+reserved IP address of the Pi. From the &amp;ldquo;Domain Name Server (DNS)
+Address&amp;rdquo; heading under &lt;code&gt;ADVANCED -&amp;gt; Setup -&amp;gt; Internet Setup&lt;/code&gt;, I
+checked the option titled &amp;ldquo;Use these DNS Servers&amp;rdquo; and the previously
+list IP. I applied the settings, and the rest was gravy.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Once I got a grip on what was going on, Pi-hole really was easy to
+install (props to the creators for a seamless process with a nice
+installer). I doubt that others&amp;rsquo; problems will be as self-inflicted as
+mine, but judging by the number of posts addressing Pi-hole issues on
+Raspberry Pi forums and Stack Exchange, it seems like issues do arise
+from time to time. Well self, see you in a year or so! You owe me
+(i.e. yourself) a beer for writing this up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Doing useful things with Emacs Lisp</title>
       <link>https://mhaffner.github.io/post/useful-emacs-lisp/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>

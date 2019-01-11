@@ -17,11 +17,11 @@
       
     
   
-  <meta name="description" content="I&rsquo;m currently in the process of moving my blog to GitHub pages. I&rsquo;m doing this for several reasons:
-(1) Ease of creating/publishing posts On my first few Wordpress posts I typed content directly in Wordpress. I didn&rsquo;t mind this at the time, but eventually I started using Emacs org-mode for all writing, including research papers, blog posts, etc. After a semi-debacle of copying an html-exported org file into Wordpress, I never posted again.">
+  <meta name="description" content="Introduction My first Pi-hole installation was a pain mostly due to self-inflicted issues. That said there are a few disjointed steps, and my lack of networking knowledge will necessitate a future reference to more a in-depth guide than what&rsquo;s currently available. This post serves as self-documentation on what went wrong so that I (or others) can avoid problems in future installations.
+Network issues After initial installation, I could not access the Pi-hole admin page nor the internet.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://mhaffner.github.io/post/first-post/">
+  <link rel="alternate" hreflang="en-us" href="https://mhaffner.github.io/post/pi-hole-troubleshooting/">
 
   
 
@@ -83,7 +83,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://mhaffner.github.io/post/first-post/">
+  <link rel="canonical" href="https://mhaffner.github.io/post/pi-hole-troubleshooting/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -91,20 +91,20 @@
   <meta property="twitter:creator" content="@geo_haffner">
   
   <meta property="og:site_name" content="Matthew Haffner">
-  <meta property="og:url" content="https://mhaffner.github.io/post/first-post/">
-  <meta property="og:title" content="The Burnination of the Wordpress | Matthew Haffner">
-  <meta property="og:description" content="I&rsquo;m currently in the process of moving my blog to GitHub pages. I&rsquo;m doing this for several reasons:
-(1) Ease of creating/publishing posts On my first few Wordpress posts I typed content directly in Wordpress. I didn&rsquo;t mind this at the time, but eventually I started using Emacs org-mode for all writing, including research papers, blog posts, etc. After a semi-debacle of copying an html-exported org file into Wordpress, I never posted again.">
+  <meta property="og:url" content="https://mhaffner.github.io/post/pi-hole-troubleshooting/">
+  <meta property="og:title" content="Pi-hole troubleshooting: An overview of my recent installation | Matthew Haffner">
+  <meta property="og:description" content="Introduction My first Pi-hole installation was a pain mostly due to self-inflicted issues. That said there are a few disjointed steps, and my lack of networking knowledge will necessitate a future reference to more a in-depth guide than what&rsquo;s currently available. This post serves as self-documentation on what went wrong so that I (or others) can avoid problems in future installations.
+Network issues After initial installation, I could not access the Pi-hole admin page nor the internet.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2017-03-30T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-01-10T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2017-03-30T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-01-10T00:00:00&#43;00:00">
   
 
-  <title>The Burnination of the Wordpress | Matthew Haffner</title>
+  
+
+  <title>Pi-hole troubleshooting: An overview of my recent installation | Matthew Haffner</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -282,7 +282,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">The Burnination of the Wordpress</h1>
+    <h1 itemprop="name">Pi-hole troubleshooting: An overview of my recent installation</h1>
 
     
 
@@ -290,8 +290,8 @@
 
   <span class="article-date">
     
-    <time datetime="2017-03-30 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-      Thu, Mar 30, 2017
+    <time datetime="2019-01-10 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Thu, Jan 10, 2019
     </time>
   </span>
   <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
@@ -311,35 +311,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=The%20Burnination%20of%20the%20Wordpress&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2ffirst-post%2f"
+         href="https://twitter.com/intent/tweet?text=Pi-hole%20troubleshooting%3a%20An%20overview%20of%20my%20recent%20installation&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2fpi-hole-troubleshooting%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmhaffner.github.io%2fpost%2ffirst-post%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmhaffner.github.io%2fpost%2fpi-hole-troubleshooting%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2ffirst-post%2f&amp;title=The%20Burnination%20of%20the%20Wordpress"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2fpi-hole-troubleshooting%2f&amp;title=Pi-hole%20troubleshooting%3a%20An%20overview%20of%20my%20recent%20installation"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmhaffner.github.io%2fpost%2ffirst-post%2f&amp;title=The%20Burnination%20of%20the%20Wordpress"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmhaffner.github.io%2fpost%2fpi-hole-troubleshooting%2f&amp;title=Pi-hole%20troubleshooting%3a%20An%20overview%20of%20my%20recent%20installation"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=The%20Burnination%20of%20the%20Wordpress&amp;body=https%3a%2f%2fmhaffner.github.io%2fpost%2ffirst-post%2f">
+         href="mailto:?subject=Pi-hole%20troubleshooting%3a%20An%20overview%20of%20my%20recent%20installation&amp;body=https%3a%2f%2fmhaffner.github.io%2fpost%2fpi-hole-troubleshooting%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -355,44 +355,118 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>I&rsquo;m currently in the process of moving my blog to GitHub pages. I&rsquo;m
-doing this for several reasons:</p>
+<h1 id="introduction">Introduction</h1>
 
-<h1 id="1-ease-of-creating-publishing-posts">(1) Ease of creating/publishing posts</h1>
+<p>My first Pi-hole installation was a pain mostly due to self-inflicted
+issues. That said there are a few disjointed steps, and my lack of
+networking knowledge will necessitate a future reference to more a
+in-depth guide than what&rsquo;s currently available. This post serves as
+self-documentation on what went wrong so that I (or others) can avoid
+problems in future installations.</p>
 
-<p>On my first few Wordpress posts I typed content directly in Wordpress.
-I didn&rsquo;t mind this at the time, but eventually I started using Emacs
-<code>org-mode</code> for all writing, including research papers, blog posts,
-etc. After a semi-debacle of copying an html-exported <code>org</code> file into
-Wordpress, I never posted again. This manual labor approach did not
-appeal to me. I discovered that I could host a blog through GitHub
-pages and simply push a <code>.md</code> file to a repository (much like I was
-already doing with code repositories) to create a post. This is much,
-much easier than what I was doing with Wordpress before. I&rsquo;m still in
-the process of figuring out how to use <code>org-mode</code> on here, but I&rsquo;ll be
-there soon :)</p>
+<h1 id="network-issues">Network issues</h1>
 
-<h1 id="2-version-control">(2) Version control</h1>
+<p>After initial installation, I could not access the Pi-hole admin page
+nor the internet. Soon after, I couldn&rsquo;t access wifi on any of my
+devices. I&rsquo;m not 100% sure what the problem was, but I have a hunch -
+After installation I needed to access my router&rsquo;s configuration page,
+but I couldn&rsquo;t remember how. This has happened before, and I just
+needed to figure out my router&rsquo;s brand and Google &ldquo;Access router
+configuration for &lt;brand&gt;&rdquo;. When I did this, I think I may have hit
+the wifi button on router (it doesn&rsquo;t help that my modem sits atop my
+router) and unknowingly <strong>turned the wifi off manually</strong>.</p>
 
-<p>I have the unfortunate habit of nuking everying I do pretty regularly,
-and git makes me forgive myself exceedingly quicker than before.</p>
+<p>After a couple hours of troubleshooting, I uninstalled Pi-hole only to
+later discover that that the wifi button on the router had been
+switched off. However, I still could not access the internet on my Pi!
+Here is what ended up enabling me to connect to the internet again:</p>
 
-<h1 id="3-less-corporate-control-profit-whatever">(3) Less corporate control/profit/whatever</h1>
+<ul>
+<li>From this <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=158142" target="_blank">link</a>, I
+put the following in <code>/etc/network/interfaces</code>:</li>
+</ul>
 
-<p>No more ads. More control for me. No longer do I get sick when I inadvertently
-see options to <em>pay</em> for Wordpress themes thinking about all the innocent people
-who have willingly done this (now that I know about Jekyll). <strong>EDIT</strong>: So I
-found out that there are plenty of Jekyll themes you can pay for too. But I can
-still avoid seeing this easier on GitHub pages. And I have more control this way.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config" data-lang="config">    auto lo
+    iface lo inet loopback
+    
+    auto eth0
+    iface eth0 inet manual
+    
+    allow-hotplug wlan0
+    iface wlan0 inet manual
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+    
+    allow-hotplug wlan1
+    iface wlan1 inet manual
+        wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf</code></pre></div>
 
-<h1 id="4-easier-to-reflect-changes-to-my-cv">(4) Easier to reflect changes to my CV</h1>
+<ul>
+<li>And from this
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=158142" target="_blank">link</a>, I put the
+following in <code>/etc/dhcpcd.conf</code>:</li>
+</ul>
 
-<p>Nothing wrong with a little self-promotion on a personal blog, right? With
-Wordpress I had to upload my new CV through the web interface <em>every time</em> I
-made a change (which is quite often). I&rsquo;m still working on this, but I plan on
-creating a symbolic link from my CV repository here, so all I&rsquo;ll have to do is
-push the changes to this repository when I update my CV.
-<strong>EDIT</strong>: I&rsquo;m now doing this with hard links. Setting it up was pretty easy.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config" data-lang="config">    # A sample configuration for dhcpcd.
+    # See dhcpcd.conf(5) for details.
+    
+    # Allow users of this group to interact with dhcpcd via the control socket.
+    #controlgroup wheel
+    
+    # Inform the DHCP server of our hostname for DDNS.
+    hostname
+    
+    # Use the hardware address of the interface for the Client ID.
+    clientid</code></pre></div>
+
+<p>Through the Pi-hole installation a bunch of options were inserted into
+<code>/etc/dhcpcd.conf</code>, and I think this was the root of the issue (of not
+being able to connect to the internet).</p>
+
+<ul>
+<li>After this I ran</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">sudo ifdown wlan0
+sudo ifup wlan0</code></pre></div>
+
+<p>and I was able to connect to the web again.</p>
+
+<p>Yet, my re-install of Pi-hole failed, and I found a working solution
+through an <a href="https://github.com/pi-hole/pi-hole/issues/1919" target="_blank">issue on GitHub</a>. I uninstalled a few things with</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">    sudo apt-get remove lighttpd dnsmasq dnsmasq-base</code></pre></div>
+
+<p>and removed <code>/etc/pihole/</code>, <code>/etc/.pihole</code>, and <code>/var/www/html/admin</code>.
+I then re-installed Pi-hole successfully and confirmed that I could
+still access wifi (both from my Pi and from other devices).</p>
+
+<h1 id="post-installation">Post installation</h1>
+
+<p>Next, I followed <a href="https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245" target="_blank">Step 3</a> from the official guide titled &ldquo;How do I
+configure my devices to use Pi-hole as their DNS server?&ldquo;, but my
+DHCP/DNS settings look quite different from the guide. I have a
+Netgear router, and from its configuration page I had to make changes
+in two locations.</p>
+
+<p>Since I did not modify the default static IP address during
+installation and was met with a warning about potential IP address
+conflicts, I had to add an address reservation under <code>ADVANCED -&gt; LAN
+Setup</code> for the Pi. In my case, this was <code>192.168.1.3</code>. Then, I had to
+change the DNS from one automatically configured by the ISP to newly
+reserved IP address of the Pi. From the &ldquo;Domain Name Server (DNS)
+Address&rdquo; heading under <code>ADVANCED -&gt; Setup -&gt; Internet Setup</code>, I
+checked the option titled &ldquo;Use these DNS Servers&rdquo; and the previously
+list IP. I applied the settings, and the rest was gravy.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Once I got a grip on what was going on, Pi-hole really was easy to
+install (props to the creators for a seamless process with a nice
+installer). I doubt that others&rsquo; problems will be as self-inflicted as
+mine, but judging by the number of posts addressing Pi-hole issues on
+Raspberry Pi forums and Stack Exchange, it seems like issues do arise
+from time to time. Well self, see you in a year or so! You owe me
+(i.e. yourself) a beer for writing this up.</p>
 
     </div>
 
@@ -401,9 +475,11 @@ push the changes to this repository when I update my CV.
 
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/github">GitHub</a>
+  <a class="btn btn-primary btn-outline" href="/tags/raspberry-pi">Raspberry Pi</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/wordpress">Wordpress</a>
+  <a class="btn btn-primary btn-outline" href="/tags/pi-hole">Pi-Hole</a>
+  
+  <a class="btn btn-primary btn-outline" href="/tags/gnu/linux">GNU/Linux</a>
   
 </div>
 
@@ -411,6 +487,16 @@ push the changes to this repository when I update my CV.
 
 
     
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/post/arch-linux/">Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</a></li>
+        
+      </ul>
+    </div>
     
 
     

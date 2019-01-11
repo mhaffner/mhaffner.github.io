@@ -60,7 +60,7 @@
     <item>
       <title>GNU/Linux</title>
       <link>https://mhaffner.github.io/tags/gnu-linux/</link>
-      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://mhaffner.github.io/tags/gnu-linux/</guid>
       <description></description>
@@ -99,6 +99,24 @@
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://mhaffner.github.io/tags/nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi-Hole</title>
+      <link>https://mhaffner.github.io/tags/pi-hole/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://mhaffner.github.io/tags/raspberry-pi/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     

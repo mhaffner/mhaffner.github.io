@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Pi-hole troubleshooting: An overview of my recent installation</title>
+      <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/pi-hole-troubleshooting/</guid>
+      <description>Introduction My first Pi-hole installation was a pain mostly due to self-inflicted issues. That said there are a few disjointed steps, and my lack of networking knowledge will necessitate a future reference to more a in-depth guide than what&amp;rsquo;s currently available. This post serves as self-documentation on what went wrong so that I (or others) can avoid problems in future installations.
+Network issues After initial installation, I could not access the Pi-hole admin page nor the internet.</description>
+    </item>
+    
+    <item>
       <title>Doing useful things with Emacs Lisp</title>
       <link>https://mhaffner.github.io/post/useful-emacs-lisp/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
