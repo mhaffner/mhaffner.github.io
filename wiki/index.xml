@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wikis on Matthew Haffner</title>
+    <link>/wiki/</link>
+    <description>Recent content in Wikis on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Burnination of the Wordpress</title>
+      <link>/wiki/pc-build/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/pc-build/</guid>
+      <description>I could have posted this to PCPartPicker or Reddit (both of which I love) but I like having everything self-contained here.</description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>/wiki/books/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/books/</guid>
+      <description>2018  That Holy Anarchist: Reflections on Christianity &amp;amp; Anarchism1 by Mark Van Steenwyk  2017  The Righteous Mind: Why Good People are Divided by Politics and Religion by Jonathan Haidt  2016  Racism Without Racists: Color-blind Racism and the Persistence of Racial Inequality in America by Eduardo Bonilla-Silva
+ American Apartheid: Segregation and the Making of the Underclass by Douglas Massey and Nancy Denton
+ American Indian Ethnic Renewal: Politics and the Resurgence of Identity by Joane Nagel</description>
+    </item>
+    
+    <item>
+      <title>Six years of graduate college study music and the transition from blog to personal wiki</title>
+      <link>/wiki/music/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/music/</guid>
+      <description>Through a series of Reddit posts/comments I stumbled upon Abhinav Tushar&amp;rsquo;s personal website where he explains the advantages of keeping a personal wiki versus a blog. I&amp;rsquo;m not going to recite them all here since you can easily find them directly at the source, but I think this post is well-suited for my inaugural wiki-style post. For a long time I&amp;rsquo;ve wanted to compile a list of music that listened to through grad school while working/writing/studying/programming in part to share this music with others but also to have this list to fall back on myself.</description>
+    </item>
+    
+  </channel>
+</rss>

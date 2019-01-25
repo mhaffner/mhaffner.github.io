@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
+    <url>
+    
+      <loc>https://mhaffner.github.io/post/osu-fb-recruiting/</loc>
+      <lastmod>2019-01-25T13:09:13-06:00</lastmod>
+    </url>
+    
+  
     
     <url>
     
@@ -11,7 +18,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/post/useful-emacs-lisp/</loc>
@@ -19,7 +25,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -29,7 +34,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/publication/non-english-tweets/</loc>
@@ -37,7 +41,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -47,7 +50,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/talk/lbsm-survey/</loc>
@@ -55,7 +57,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -65,7 +66,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/publication/lbsm-survey/</loc>
@@ -73,7 +73,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -83,7 +82,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/post/shp2nosql/</loc>
@@ -91,7 +89,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -101,7 +98,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/talk/shp2nosql/</loc>
@@ -109,7 +105,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -119,7 +114,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/post/</loc>
@@ -127,7 +121,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -137,7 +130,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/talk/</loc>
@@ -146,6 +138,12 @@
     
   
     
+    <url>
+    
+      <loc>https://mhaffner.github.io/author/admin/</loc>
+    </url>
+    
+  
     
     <url>
     
@@ -156,7 +154,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/arch-linux/</loc>
@@ -166,6 +163,13 @@
     
   
     
+    <url>
+    
+      <loc>https://mhaffner.github.io/author/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
@@ -176,7 +180,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/categories/</loc>
@@ -184,7 +187,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -195,7 +197,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/emacs-lisp/</loc>
@@ -204,7 +205,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -215,7 +215,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/geojson/</loc>
@@ -224,7 +223,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -235,7 +233,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/manjaro/</loc>
@@ -245,16 +242,14 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <lastmod>2016-04-20T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
   
-    
     
     <url>
     
@@ -265,7 +260,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/pi-hole/</loc>
@@ -274,7 +268,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -285,7 +278,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/raspberry-pi/</loc>
@@ -294,7 +286,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -305,6 +296,14 @@
     
   
     
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/spatial-statistics/</loc>
+      <lastmod>2019-01-25T13:09:13-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     
@@ -315,7 +314,6 @@
     
   
     
-    
     <url>
     
       <loc>https://mhaffner.github.io/tags/wordpress/</loc>
@@ -325,6 +323,32 @@
     
   
     
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/college-football/</loc>
+      <lastmod>2019-01-25T13:09:13-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/geography/</loc>
+      <lastmod>2019-01-25T13:09:13-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://mhaffner.github.io/tags/recruiting/</loc>
+      <lastmod>2019-01-25T13:09:13-06:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
     
     <url>
     

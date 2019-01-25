@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading on Matthew Haffner</title>
+    <link>/tags/reading/</link>
+    <description>Recent content in Reading on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Wed, 29 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading List</title>
+      <link>/wiki/books/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/books/</guid>
+      <description>2018  That Holy Anarchist: Reflections on Christianity &amp;amp; Anarchism1 by Mark Van Steenwyk  2017  The Righteous Mind: Why Good People are Divided by Politics and Religion by Jonathan Haidt  2016  Racism Without Racists: Color-blind Racism and the Persistence of Racial Inequality in America by Eduardo Bonilla-Silva
+ American Apartheid: Segregation and the Making of the Underclass by Douglas Massey and Nancy Denton
+ American Indian Ethnic Renewal: Politics and the Resurgence of Identity by Joane Nagel</description>
+    </item>
+    
+  </channel>
+</rss>

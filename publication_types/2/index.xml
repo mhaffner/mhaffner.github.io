@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Matthew Haffner</title>
+    <link>https://mhaffner.github.io/publication_types/2/</link>
+    <description>Recent content in 2 on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhaffner.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter</title>
+      <link>https://mhaffner.github.io/publication/blm-tweets/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/publication/blm-tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A spatial analysis of non-English Twitter activity in Houston, TX</title>
+      <link>https://mhaffner.github.io/publication/non-english-tweets/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/publication/non-english-tweets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Location based social media behavior and perception: Views of university students</title>
+      <link>https://mhaffner.github.io/publication/lbsm-survey/</link>
+      <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/publication/lbsm-survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS-based modeling of tornado siren sound propagation: Refining spatial extent and coverage estimations</title>
+      <link>https://mhaffner.github.io/publication/tornado-sirens/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/publication/tornado-sirens/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

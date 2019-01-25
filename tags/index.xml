@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Matthew Haffner</title>
+    <link>https://mhaffner.github.io/tags/</link>
+    <description>Recent content in Tags on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhaffner.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>https://mhaffner.github.io/tags/academic/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux</title>
+      <link>https://mhaffner.github.io/tags/arch-linux/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>https://mhaffner.github.io/tags/bash/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://mhaffner.github.io/tags/emacs/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs Lisp</title>
+      <link>https://mhaffner.github.io/tags/emacs-lisp/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/emacs-lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GNU/Linux</title>
+      <link>https://mhaffner.github.io/tags/gnu-linux/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/gnu-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GeoJSON</title>
+      <link>https://mhaffner.github.io/tags/geojson/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/geojson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://mhaffner.github.io/tags/github/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manjaro</title>
+      <link>https://mhaffner.github.io/tags/manjaro/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NoSQL</title>
+      <link>https://mhaffner.github.io/tags/nosql/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi-Hole</title>
+      <link>https://mhaffner.github.io/tags/pi-hole/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://mhaffner.github.io/tags/raspberry-pi/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shapefile</title>
+      <link>https://mhaffner.github.io/tags/shapefile/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/shapefile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial statistics</title>
+      <link>https://mhaffner.github.io/tags/spatial-statistics/</link>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/spatial-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://mhaffner.github.io/tags/wordpress/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>college football</title>
+      <link>https://mhaffner.github.io/tags/college-football/</link>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/college-football/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geography</title>
+      <link>https://mhaffner.github.io/tags/geography/</link>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/geography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recruiting</title>
+      <link>https://mhaffner.github.io/tags/recruiting/</link>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/recruiting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shp2snoql</title>
+      <link>https://mhaffner.github.io/tags/shp2snoql/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/tags/shp2snoql/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

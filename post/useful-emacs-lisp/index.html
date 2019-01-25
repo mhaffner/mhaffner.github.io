@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.53" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Matthew Haffner">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A beginner&#39;s (or lurker&#39;s) guide to extending the ultimately extensible text editor">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://mhaffner.github.io/post/useful-emacs-lisp/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-96619934-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://mhaffner.github.io/index.xml" type="application/rss+xml" title="Matthew Haffner">
+  <link rel="feed" href="https://mhaffner.github.io/index.xml" type="application/rss+xml" title="Matthew Haffner">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://mhaffner.github.io/post/useful-emacs-lisp/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Matthew Haffner">
+  <meta property="og:url" content="https://mhaffner.github.io/post/useful-emacs-lisp/">
+  <meta property="og:title" content="Doing useful things with Emacs Lisp | Matthew Haffner">
+  <meta property="og:description" content="A beginner&#39;s (or lurker&#39;s) guide to extending the ultimately extensible text editor"><meta property="og:image" content="https://mhaffner.github.io/img/prof-pic-edit.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-11-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-11-25T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Doing useful things with Emacs Lisp | Matthew Haffner</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Matthew Haffner</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#talks">
+            
+            <span>Talks</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/mhaffner/Awesome-CV/blob/master/cv.pdf" target="_blank" rel="noopener">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Doing useful things with Emacs Lisp</h1>
+
+  
+
+  
+    
+
+
+<meta content="2018-11-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2018-11-25 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Sun, Nov 25, 2018</time>
+  </span>
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Doing%20useful%20things%20with%20Emacs%20Lisp&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2fuseful-emacs-lisp%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmhaffner.github.io%2fpost%2fuseful-emacs-lisp%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fmhaffner.github.io%2fpost%2fuseful-emacs-lisp%2f&amp;title=Doing%20useful%20things%20with%20Emacs%20Lisp"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fmhaffner.github.io%2fpost%2fuseful-emacs-lisp%2f&amp;title=Doing%20useful%20things%20with%20Emacs%20Lisp"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Doing%20useful%20things%20with%20Emacs%20Lisp&amp;body=https%3a%2f%2fmhaffner.github.io%2fpost%2fuseful-emacs-lisp%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>I wrote this post to demonstrate how I&rsquo;m using Emacs Lisp to do some useful
+things. This is post aimed at beginners and those interested (e.g., Vim users
+potentially) in how Emacs can be extended to automate some simple tasks.
+Advanced users will probably have more elegant (or more complete) solutions than
+what I have here,<sup>1</sup> so with that in mind I will focus more on the
+motivations, thought processes, and progressions I&rsquo;ve gone through with these
+functions. I also discuss some future directions and how these functions could
+be improved.</p>
+
+<p>About a year ago I made a point to complete the built-in Emacs Lisp tutorial.
+For those looking for a good place to start with Emacs Lisp, this is undoubtedly
+it. It&rsquo;s one of the best programming tutorials I&rsquo;ve ever gone through, and I
+thoroughly enjoyed it. While navigating through the tutorial, I created a .org
+file with subsections for each chapter and individual code blocks for each set
+of examples/exercise. I frequently go to this file to find snippets, and I often
+find this more effective than Googling solutions.<sup>2</sup></p>
+
+<p>The functions below and all associated code are in my dotfile which can be found
+in <a href="https://github.com/mhaffner/dotfiles" target="_blank">this repo</a>. Note that I&rsquo;m using
+Spacemacs, hence the associated keybindings and Vim-like conventions.</p>
+
+<h1 id="open-html-firefox">open-html-firefox</h1>
+
+<p>I created this function since I often render .org and .Rmd files into .html
+files within Emacs. Then, I use the command</p>
+
+<pre><code>:! firefox my-newly-rendered-file.html
+</code></pre>
+
+<p>to open the file in a browser. Once the .html file is open, it can simply be
+refreshed to reflect any changes. But, I often use Emacs as a navigation tool
+(e.g., <code>SPC f f</code>; i.e. <code>lazy-helm/spacemacs/helm-find-files</code>) by first opening a
+.org or .Rmd in Emacs, then opening the .html in a browser with a command like
+the one above. This becomes tedious since most materials I create for courses
+(syllabi, assignments, handouts, discussion questions, etc.) are served as .html
+files, and I have to open these all the time. I could open the <em>.html</em> file in
+Emacs instead and then use</p>
+
+<pre><code>:! firefox %
+</code></pre>
+
+<p>but the .html files created by <code>org-reveal</code> (a very nice package) are quite
+large and cause Emacs to hang. So, I sought to create something that would (a)
+get the full file path to the current buffer and strip the extension, (b) slap
+&ldquo;.html&rdquo; to the end of this string, (c) open the file in Firefox, and (d)
+assign this function to a keybinding. Here is what I came up with:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-EmacsLisp" data-lang="EmacsLisp">(defun open-html-firefox ()
+
+  (interactive)
+
+  <span style="color:#75715e">; create the new string of the file to open</span>
+  (setq file-string (<span style="color:#a6e22e">concat</span> (file-name-sans-extension (<span style="color:#a6e22e">buffer-file-name</span>)) <span style="color:#e6db74">&#34;.html&#34;</span>))
+
+  <span style="color:#75715e">; execute command</span>
+  (shell-command (<span style="color:#a6e22e">concat</span> <span style="color:#e6db74">&#34;firefox &#34;</span> file-string)))
+
+
+  <span style="color:#75715e">; assign this function to a keybinding in markdown mode</span>
+  (add-hook <span style="color:#e6db74">&#39;markdown-mode-hook</span>
+    (lambda ()
+      (local-set-key (kbd <span style="color:#e6db74">&#34;C-c f&#34;</span>) <span style="color:#e6db74">&#39;open-html-firefox</span>)))
+
+  <span style="color:#75715e">; assign this function to a keybinding in org mode</span>
+  (add-hook <span style="color:#e6db74">&#39;org-mode-hook</span>
+            (lambda ()
+              (local-set-key (kbd <span style="color:#e6db74">&#34;C-c f&#34;</span>) <span style="color:#e6db74">&#39;open-html-firefox</span>)))</code></pre></div>
+
+<p>In my dotfile, the function has documentation, but I removed it for this post
+since I&rsquo;m explaining everything in detail. The function itself is quite short
+and consists of mainly two things: (a) creating a variable called
+<code>file-string</code><sup>3</sup> and (b) opening this string (which is an .html
+file) in Firefox with a command.</p>
+
+<p>Originally I was using</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp"> (setq file-string (replace-regexp-in-string <span style="color:#e6db74">&#34;\.Rmd&#34;</span> <span style="color:#e6db74">&#34;.html&#34;</span> (<span style="color:#a6e22e">buffer-file-name</span>)))</code></pre></div>
+
+<p>to create the string, but this obviously only works for .Rmd files. Also, I was
+not initially aware of the <code>file-name-sans-extension</code> function which turned out
+to be much easier than what I was doing anyway.</p>
+
+<p>The two <code>add-hook</code>&rsquo;s just assign <code>open-html-firefox</code> to keybindings in
+<code>markdown-mode</code> and <code>org-mode</code>. The reason why I use lambdas is because the
+internet told me to;<sup>4</sup> lo and behold, it doesn&rsquo;t work without lambdas.
+It is possible to assign this function to a global keybinding, but I don&rsquo;t want
+to override keybindings on other modes. Something like <code>C-c f</code> is common enough
+that I assume it&rsquo;s being used elsewhere.</p>
+
+<p>What would be even better (and simpler) is a function/keybinding that opens a
+file under point directly from <code>helm-find-files</code>.</p>
+
+<h1 id="add-src-elements">add-src-elements</h1>
+
+<p>This function adds the text</p>
+
+<pre><code>#+BEGIN_SRC
+#+END_SRC
+</code></pre>
+
+<p>to the current buffer and places the cursor just after &ldquo;#+BEGIN_SRC&rdquo;. This block
+structure is used to embed code .org files, which I use to create presentations.
+For example, a block may contain something like</p>
+
+<pre><code>#+BEGIN_SRC python
+import numpy
+import scipy
+
+x = 'Emacs Rocks' # i hope this phrase isn't trademarked
+#+END_SRC
+</code></pre>
+
+<p>Manually typing <code>#+BEGIN_SRC...</code>, etc. etc. is tedious, so I simply created a
+function and keybinding to automate this. Here it is:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defun add-src-elements ()
+    <span style="color:#e6db74">&#34;Make adding #+BEGIN/END _SRC elements easier&#34;</span>
+    (interactive)
+    (<span style="color:#a6e22e">insert</span> <span style="color:#e6db74">&#34;#+BEGIN_SRC\n#+END_SRC&#34;</span>)
+    (<span style="color:#a6e22e">forward-line</span> <span style="color:#ae81ff">-1</span>)
+    (evil-append-line <span style="color:#ae81ff">1</span>)
+    (<span style="color:#a6e22e">insert</span> <span style="color:#e6db74">&#34; &#34;</span>))
+    
+  <span style="color:#75715e">; set it to a keybinding</span>
+  (with-eval-after-load <span style="color:#e6db74">&#39;org</span>
+    (add-hook <span style="color:#e6db74">&#39;org-mode-hook</span>
+              (lambda ()
+                (local-set-key (kbd <span style="color:#e6db74">&#34;C-c s&#34;</span>) <span style="color:#e6db74">&#39;add-src-elements</span>)))</code></pre></div>
+
+<p>My dotfile looks a little different since I have other <code>org-mode</code> hooks, but
+this is the gist of it. Again, the internet insists I use
+<code>with-eval-after-load</code>,<sup>4</sup> so I obey. This could be improved by looking
+for a previous codeblock (i.e. <code>search-backward</code>) in the current buffer if one
+exists, getting the language used for the block if it&rsquo;s listed (Python in my
+example), and inserting this language name just after <code>#+BEGIN_SRC</code>. In most
+presentations I only demonstrate concepts in one language, so it would make
+sense to use the previous source block&rsquo;s language if it is listed.</p>
+
+<h1 id="emacs-lisp-programming-strats">Emacs Lisp programming strats</h1>
+
+<p>When using Emacs Lisp, I&rsquo;ve often had difficultly locating proper functions to
+do simple things. For example, in my second function, <code>add-src-elements</code>, I
+utilize <code>(forward-line -1)</code>, which serves to move the cursor to the previous
+line. This is something we do all the time in text editors manually. As a
+Spacemacs user, for example, I use <code>j</code>/<code>k</code> to navigate between single lines.
+This is where a beautiful feature of Emacs is exposed: <code>describe-key</code>, which
+will show the function called by any keybinding. To find out what function is
+called by <code>k</code> (which navigates to the previous line in <code>evil-mode</code>), I use <code>C-h
+k</code> to call <code>describe-key</code>, and then I simply press <code>k</code>.</p>
+
+<p>The function appearing in the help buffer is called <code>evil-previous-line</code>. While
+this wasn&rsquo;t what I used directly in my custom function, this process often
+points me to the function I need. Similar useful features include
+<code>describe-function</code> and <code>describe-variable</code>. All of these <code>describe-</code> functions
+contain links to the source code, which demonstrate what&rsquo;s going on under the
+hood.</p>
+
+<h1 id="footnotes">Footnotes</h1>
+
+<p><sup>1</sup> Please do share if you have better solutions!</p>
+
+<p><sup>2</sup> Which is baffling.</p>
+
+<p><sup>3</sup> Using <code>let</code> would probably be a better approach than <code>setq</code>.</p>
+
+<p><sup>4</sup> A Spacemacs requirement?</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/emacs/">Emacs</a>
+  
+  <a class="badge badge-light" href="/tags/emacs-lisp/">Emacs Lisp</a>
+  
+</div>
+
+
+
+
+    
+      
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  
+  <img class="portrait mr-3" src="/author/admin/avatar_hua142dc9e239def007cc554667d91657f_148683_250x250_fill_q75_box_center.jpg" itemprop="image" alt="Avatar">
+  
+
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/authors/admin">Matthew Haffner</a></h5>
+    <h6 class="card-subtitle">Assistant Professor - Department of Geography and Anthropology</h6>
+    <p class="card-text" itemprop="description">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="/#contact" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/geo_haffner" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.co.uk/citations?hl=en&amp;user=as6Av2sAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="//gitlab.com/mhaffner" >
+          <i class="fab fa-gitlab"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/mhaffner" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/mhaffner/Awesome-CV/blob/master/cv.pdf" target="_blank" rel="noopener">
+          <i class="ai ai-cv"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mhaffner" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    2018 Matthew Haffner &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    <script src="/js/academic.min.546d82170f310ecadabf6df91fb59927.js"></script>
+
+    
+
+  </body>
+</html>
+

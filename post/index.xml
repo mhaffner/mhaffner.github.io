@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Matthew Haffner</title>
+    <link>https://mhaffner.github.io/post/</link>
+    <description>Recent content in Posts on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mhaffner.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Geography of Oklahoma State Football Recruiting</title>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting/</link>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting/</guid>
+      <description>Anyone who reads PFB articles on recruiting or listens to Gundy’s press conferences around signing day knows that Oklahoma State’s recruiting practices are heavily scrutinized.
+Whereas Gundy was energetic and highly motivated during his
+…not to mention creating some cool visuals, etc.
+Rivals
+Yet, apart from these two, the mean and median centers have changed remarkably little over the past 14 years.</description>
+    </item>
+    
+    <item>
+      <title>Pi-hole troubleshooting: An overview of my recent installation</title>
+      <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/pi-hole-troubleshooting/</guid>
+      <description>Introduction My first Pi-hole installation was a pain mostly due to self-inflicted issues. That said there are a few disjointed steps, and my lack of networking knowledge will necessitate a future reference to more a in-depth guide than what&amp;rsquo;s currently available. This post serves as self-documentation on what went wrong so that I (or others) can avoid problems in future installations.
+Network issues After initial installation, I could not access the Pi-hole admin page nor the internet.</description>
+    </item>
+    
+    <item>
+      <title>Doing useful things with Emacs Lisp</title>
+      <link>https://mhaffner.github.io/post/useful-emacs-lisp/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/useful-emacs-lisp/</guid>
+      <description>I wrote this post to demonstrate how I&amp;rsquo;m using Emacs Lisp to do some useful things. This is post aimed at beginners and those interested (e.g., Vim users potentially) in how Emacs can be extended to automate some simple tasks. Advanced users will probably have more elegant (or more complete) solutions than what I have here,1 so with that in mind I will focus more on the motivations, thought processes, and progressions I&amp;rsquo;ve gone through with these functions.</description>
+    </item>
+    
+    <item>
+      <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>
+      <link>https://mhaffner.github.io/post/arch-linux/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/arch-linux/</guid>
+      <description>EDIT: I&amp;rsquo;ve made several modifications to the original piece based on helpful comments from reddit users newworkaccount, iKnitYogurt, jprada, and ThisTimeIllSucceed on the thread here. View the original post in its full glory/shame on Github.
+Like everyone else, when I first started using GNU/Linux I gravitated toward Ubuntu. While using Ubuntu, I sought to try other distributions and briefly used Fedora, Elementary OS, and Debian. With all of these distributions &amp;ndash; including Ubuntu &amp;ndash; I came across a very similar problem: having to manually add software repositories to get programs that were more up-to-date than the package manager&amp;rsquo;s defaults.</description>
+    </item>
+    
+    <item>
+      <title>The development of shp2nosql</title>
+      <link>https://mhaffner.github.io/post/shp2nosql/</link>
+      <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/shp2nosql/</guid>
+      <description>In the early days of my dissertation, I was collecting Twitter data but had no idea how to store, manage, or query these data. First, I tried PostgreSQL with PostGIS. I had been wanting to learn PostGIS anyway, not to mention a suitable alternative to MS SQL Server. After learning PostGIS&amp;rsquo;s intricacies, I soon found it was unsuitable for my needs. After some searching, I stumbled upon MongoDB.
+Subsequently, I started using MongoDB to handle my data.</description>
+    </item>
+    
+    <item>
+      <title>The Burnination of the Wordpress</title>
+      <link>https://mhaffner.github.io/post/first-post/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/first-post/</guid>
+      <description>I&amp;rsquo;m currently in the process of moving my blog to GitHub pages. I&amp;rsquo;m doing this for several reasons:
+(1) Ease of creating/publishing posts On my first few Wordpress posts I typed content directly in Wordpress. I didn&amp;rsquo;t mind this at the time, but eventually I started using Emacs org-mode for all writing, including research papers, blog posts, etc. After a semi-debacle of copying an html-exported org file into Wordpress, I never posted again.</description>
+    </item>
+    
+  </channel>
+</rss>
