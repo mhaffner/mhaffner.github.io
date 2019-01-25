@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>college football on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/tags/college-football/</link>
+    <link>/tags/college-football/</link>
     <description>Recent content in college football on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
     <lastBuildDate>Fri, 25 Jan 2019 13:09:13 -0600</lastBuildDate>
     
-	<atom:link href="https://mhaffner.github.io/tags/college-football/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/college-football/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Geography of Oklahoma State Football Recruiting</title>
-      <link>https://mhaffner.github.io/post/osu-fb-recruiting/</link>
+      <link>/draft/osu-fb-recruiting/</link>
       <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/post/osu-fb-recruiting/</guid>
+      <guid>/draft/osu-fb-recruiting/</guid>
       <description>Anyone who reads PFB articles on recruiting or listens to Gundy’s press conferences around signing day knows that Oklahoma State’s recruiting practices are heavily scrutinized.
 Whereas Gundy was energetic and highly motivated during his
 …not to mention creating some cool visuals, etc.
