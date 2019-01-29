@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Matthew Haffner</title>
-    <link>/categories/</link>
+    <link>https://mhaffner.github.io/categories/</link>
     <description>Recent content in Categories on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mhaffner.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
