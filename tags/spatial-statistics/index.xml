@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spatial statistics on Matthew Haffner</title>
-    <link>/tags/spatial-statistics/</link>
+    <link>https://mhaffner.github.io/tags/spatial-statistics/</link>
     <description>Recent content in Spatial statistics on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
-    <lastBuildDate>Tue, 29 Jan 2019 13:09:13 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 13:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mhaffner.github.io/tags/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The geography of Oklahoma State football recruiting</title>
-      <link>/draft/osu-fb-recruiting/</link>
-      <pubDate>Tue, 29 Jan 2019 13:09:13 -0600</pubDate>
+      <link>https://mhaffner.github.io/draft/osu-fb-recruiting/</link>
+      <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>/draft/osu-fb-recruiting/</guid>
-      <description>Introduction Anyone who reads listens to Gundy’s press conferences around signing day or reads PFB articles on recruiting knows that Oklahoma State Football’s recruiting practices are heavily scrutinized. The writers of PFB have pointed out that Gundy’s attitude toward recruiting seems to have changed. Where the mantra used to be “recruiting is the most important thing we do,” it now seems less important.</description>
+      <guid>https://mhaffner.github.io/draft/osu-fb-recruiting/</guid>
+      <description>Introduction Anyone who reads listens to Gundy’s press conferences around signing day or reads PFB articles on recruiting knows that Oklahoma State Football’s recruiting practices are heavily scrutinized. The writers of PFB have pointed out that Gundy’s attitude toward recruiting has seemingly changed. Where the mantra used to be “recruiting is the most important thing we do,” it now seems less important.</description>
     </item>
     
     <item>
       <title>The geography of Oklahoma State football recruiting: Technical approach</title>
-      <link>/post/osu-fb-recruiting-tech/</link>
-      <pubDate>Tue, 29 Jan 2019 13:09:13 -0600</pubDate>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</link>
+      <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>/post/osu-fb-recruiting-tech/</guid>
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</guid>
       <description>Introduction In this piece I’m going to describe the technical aspects behind a recent project that I wrote about on the geography of Oklahoma State football’s recruiting practices. This project involves extracting web content, processing text, geocoding, web mapping, and some basic exploratory spatial data analysis. I met a number of unexpected challenges along the way and I hope this will serve to help others facing similar issues.</description>
     </item>
     
