@@ -7,27 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
-    <lastBuildDate>Mon, 28 Jan 2019 13:09:13 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jan 2019 13:09:13 -0600</lastBuildDate>
     
 	<atom:link href="/tags/geography/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The geography of Oklahoma State football recruiting</title>
+      <title>The Geography of Oklahoma State Football Recruiting</title>
       <link>/draft/osu-fb-recruiting/</link>
-      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
       
       <guid>/draft/osu-fb-recruiting/</guid>
-      <description>Introduction Anyone who reads listens to Gundy’s press conferences around signing day or reads PFB articles on recruiting knows that Oklahoma State Football’s recruiting practices are heavily scrutinized. The writers of PFB have pointed out that Gundy’s attitude toward recruiting seems to have changed. Where the mantra used to be “recruiting is the most important thing we do,” it now seems less important.</description>
-    </item>
-    
-    <item>
-      <title>The geography of Oklahoma State football recruiting: Technical approach</title>
-      <link>/post/osu-fb-recruiting-tech/</link>
-      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
-      
-      <guid>/post/osu-fb-recruiting-tech/</guid>
-      <description>Introduction In this piece I’m going to describe in detail the technical aspects behind a recent a recent project that I wrote about on the geography of Oklahoma State football’s recruiting practices. This project involves extracting web content, processing text, geocoding, web mapping, and some basic exploratory spatial data analysis. I met a number of unexpected challenges along the way and I hope this will serve to help others facing similar issues.</description>
+      <description>Anyone who reads PFB articles on recruiting or listens to Gundy’s press conferences around signing day knows that Oklahoma State’s recruiting practices are heavily scrutinized.
+Whereas Gundy was energetic and highly motivated during his
+…not to mention creating some cool visuals, etc.
+Rivals
+Yet, apart from these two, the mean and median centers have changed remarkably little over the past 14 years.</description>
     </item>
     
   </channel>
