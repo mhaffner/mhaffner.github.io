@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/home/</link>
+    <link>/home/</link>
     <description>Recent content in Homes on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="https://mhaffner.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://mhaffner.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Biography</title>
+      <link>/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
-      <guid>https://mhaffner.github.io/home/about/</guid>
-      <description>Biography I&amp;rsquo;m currently an Assistant Professor in the Department of Geography and Anthropology at the University of Wisconsin - Eau Claire where I started in June 2018. Most of my research revolves around geographic information science (GIScience), but I&amp;rsquo;m also interested in Emacs, GNU/Linux, Free/Libre Software, commuter cycling, and most recently, landscape photography. These do spill into research in various ways, of course!</description>
+      <guid>/home/about/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>https://mhaffner.github.io/home/publications/</link>
+      <link>/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/home/publications/</guid>
+      <guid>/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://mhaffner.github.io/home/talks/</link>
+      <link>/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/home/talks/</guid>
+      <guid>/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>https://mhaffner.github.io/home/posts/</link>
+      <link>/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/home/posts/</guid>
+      <guid>/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>https://mhaffner.github.io/home/teaching/</link>
+      <link>/home/teaching/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/home/teaching/</guid>
+      <guid>/home/teaching/</guid>
       <description>At UW - Eau Claire, in Fall 2018 I&amp;rsquo;m teaching:
  GEOG-435 Geographic Information Systems III GEOG-337 Geographic Information Systems II GEOG-111 Human Geography  In the past at UW - Eau Claire, I&amp;rsquo;ve also taught:
  GEOG-335 Geographic Information Systems I  At Oklahoma State I&amp;rsquo;ve been the instructor of record in:
@@ -62,10 +62,10 @@
     
     <item>
       <title>Contact</title>
-      <link>https://mhaffner.github.io/home/contact/</link>
+      <link>/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/home/contact/</guid>
+      <guid>/home/contact/</guid>
       <description></description>
     </item>
     

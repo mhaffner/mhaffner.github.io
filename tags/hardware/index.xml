@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Matthew Haffner</title>
+    <link>/tags/hardware/</link>
+    <description>Recent content in Hardware on Matthew Haffner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2018 Matthew Haffner</copyright>
+    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Burnination of the Wordpress</title>
+      <link>/wiki/pc-build/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/pc-build/</guid>
+      <description>I could have posted this to PCPartPicker or Reddit (both of which I love) but I like having everything self-contained here.</description>
+    </item>
+    
+  </channel>
+</rss>

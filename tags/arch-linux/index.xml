@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch Linux on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/tags/arch-linux/</link>
+    <link>/tags/arch-linux/</link>
     <description>Recent content in Arch Linux on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
     <lastBuildDate>Thu, 13 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mhaffner.github.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>
-      <link>https://mhaffner.github.io/post/arch-linux/</link>
+      <link>/post/arch-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/arch-linux/</guid>
+      <guid>/post/arch-linux/</guid>
       <description>EDIT: I&amp;rsquo;ve made several modifications to the original piece based on helpful comments from reddit users newworkaccount, iKnitYogurt, jprada, and ThisTimeIllSucceed on the thread here. View the original post in its full glory/shame on Github.
 Like everyone else, when I first started using GNU/Linux I gravitated toward Ubuntu. While using Ubuntu, I sought to try other distributions and briefly used Fedora, Elementary OS, and Debian. With all of these distributions &amp;ndash; including Ubuntu &amp;ndash; I came across a very similar problem: having to manually add software repositories to get programs that were more up-to-date than the package manager&amp;rsquo;s defaults.</description>
     </item>

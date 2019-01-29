@@ -2,148 +2,265 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mhaffner.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>https://mhaffner.github.io/tags/academic/</link>
+      <link>/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/academic/</guid>
+      <guid>/tags/academic/</guid>
       <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
       <title>Arch Linux</title>
-      <link>https://mhaffner.github.io/tags/arch-linux/</link>
+      <link>/tags/arch-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/arch-linux/</guid>
+      <guid>/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bash</title>
-      <link>https://mhaffner.github.io/tags/bash/</link>
+      <link>/tags/bash/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/bash/</guid>
+      <guid>/tags/bash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emacs</title>
-      <link>https://mhaffner.github.io/tags/emacs/</link>
+      <link>/tags/emacs/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/emacs/</guid>
+      <guid>/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emacs Lisp</title>
-      <link>https://mhaffner.github.io/tags/emacs-lisp/</link>
+      <link>/tags/emacs-lisp/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/emacs-lisp/</guid>
+      <guid>/tags/emacs-lisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GNU/Linux</title>
-      <link>https://mhaffner.github.io/tags/gnu-linux/</link>
+      <link>/tags/gnu-linux/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/gnu-linux/</guid>
+      <guid>/tags/gnu-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GeoJSON</title>
-      <link>https://mhaffner.github.io/tags/geojson/</link>
+      <link>/tags/geojson/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/geojson/</guid>
+      <guid>/tags/geojson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub</title>
-      <link>https://mhaffner.github.io/tags/github/</link>
+      <link>/tags/github/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/github/</guid>
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>/tags/hardware/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leaflet</title>
+      <link>/tags/leaflet/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/leaflet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manjaro</title>
-      <link>https://mhaffner.github.io/tags/manjaro/</link>
+      <link>/tags/manjaro/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/manjaro/</guid>
+      <guid>/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>/tags/music/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NoSQL</title>
-      <link>https://mhaffner.github.io/tags/nosql/</link>
+      <link>/tags/nosql/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/nosql/</guid>
+      <guid>/tags/nosql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pi-Hole</title>
-      <link>https://mhaffner.github.io/tags/pi-hole/</link>
+      <link>/tags/pi-hole/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/pi-hole/</guid>
+      <guid>/tags/pi-hole/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post</title>
+      <link>/tags/post/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://mhaffner.github.io/tags/raspberry-pi/</link>
+      <link>/tags/raspberry-pi/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/raspberry-pi/</guid>
+      <guid>/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>/tags/reading/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reading/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shapefile</title>
-      <link>https://mhaffner.github.io/tags/shapefile/</link>
+      <link>/tags/shapefile/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/shapefile/</guid>
+      <guid>/tags/shapefile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial statistics</title>
+      <link>/tags/spatial-statistics/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/spatial-statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wordpress</title>
-      <link>https://mhaffner.github.io/tags/wordpress/</link>
+      <link>/tags/wordpress/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/wordpress/</guid>
+      <guid>/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>college football</title>
+      <link>/tags/college-football/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/college-football/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>geography</title>
+      <link>/tags/geography/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/geography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recruiting</title>
+      <link>/tags/recruiting/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/recruiting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shp2snoql</title>
-      <link>https://mhaffner.github.io/tags/shp2snoql/</link>
+      <link>/tags/shp2snoql/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/tags/shp2snoql/</guid>
+      <guid>/tags/shp2snoql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web mapping</title>
+      <link>/tags/web-mapping/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/web-mapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web scraping</title>
+      <link>/tags/web-scraping/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/web-scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wiki</title>
+      <link>/tags/wiki/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wiki/</guid>
       <description></description>
     </item>
     
