@@ -141,172 +141,150 @@ from time to time. Well self, see you in a year or so! You owe me
       <guid>https://mhaffner.github.io/post/useful-emacs-lisp/</guid>
       <description>
 
-&lt;p&gt;I wrote this post to demonstrate how I&amp;rsquo;m using Emacs Lisp to do some useful
+
+&lt;p&gt;I wrote this post to demonstrate how I’m using Emacs Lisp to do some useful
 things. This is post aimed at beginners and those interested (e.g., Vim users
 potentially) in how Emacs can be extended to automate some simple tasks.
 Advanced users will probably have more elegant (or more complete) solutions than
-what I have here,&lt;sup&gt;1&lt;/sup&gt; so with that in mind I will focus more on the
-motivations, thought processes, and progressions I&amp;rsquo;ve gone through with these
+what I have here,&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; so with that in mind I will focus more on the
+motivations, thought processes, and progressions I’ve gone through with these
 functions. I also discuss some future directions and how these functions could
 be improved.&lt;/p&gt;
-
 &lt;p&gt;About a year ago I made a point to complete the built-in Emacs Lisp tutorial.
 For those looking for a good place to start with Emacs Lisp, this is undoubtedly
-it. It&amp;rsquo;s one of the best programming tutorials I&amp;rsquo;ve ever gone through, and I
+it. It’s one of the best programming tutorials I’ve ever gone through, and I
 thoroughly enjoyed it. While navigating through the tutorial, I created a .org
 file with subsections for each chapter and individual code blocks for each set
 of examples/exercise. I frequently go to this file to find snippets, and I often
-find this more effective than Googling solutions.&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
-
+find this more effective than Googling solutions.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The functions below and all associated code are in my dotfile which can be found
-in &lt;a href=&#34;https://github.com/mhaffner/dotfiles&#34; target=&#34;_blank&#34;&gt;this repo&lt;/a&gt;. Note that I&amp;rsquo;m using
+in &lt;a href=&#34;https://github.com/mhaffner/dotfiles&#34;&gt;this repo&lt;/a&gt;. Note that I’m using
 Spacemacs, hence the associated keybindings and Vim-like conventions.&lt;/p&gt;
-
-&lt;h1 id=&#34;open-html-firefox&#34;&gt;open-html-firefox&lt;/h1&gt;
-
+&lt;div id=&#34;open-html-firefox&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;open-html-firefox&lt;/h1&gt;
 &lt;p&gt;I created this function since I often render .org and .Rmd files into .html
 files within Emacs. Then, I use the command&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:! firefox my-newly-rendered-file.html
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;:! firefox my-newly-rendered-file.html&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;to open the file in a browser. Once the .html file is open, it can simply be
 refreshed to reflect any changes. But, I often use Emacs as a navigation tool
-(e.g., &lt;code&gt;SPC f f&lt;/code&gt;; i.e. &lt;code&gt;lazy-helm/spacemacs/helm-find-files&lt;/code&gt;) by first opening a
+(e.g., &lt;code&gt;SPC f f&lt;/code&gt;; i.e. &lt;code&gt;lazy-helm/spacemacs/helm-find-files&lt;/code&gt;) by first opening a
 .org or .Rmd in Emacs, then opening the .html in a browser with a command like
 the one above. This becomes tedious since most materials I create for courses
 (syllabi, assignments, handouts, discussion questions, etc.) are served as .html
 files, and I have to open these all the time. I could open the &lt;em&gt;.html&lt;/em&gt; file in
 Emacs instead and then use&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;:! firefox %
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;pre&gt;&lt;code&gt;:! firefox %&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;but the .html files created by &lt;code&gt;org-reveal&lt;/code&gt; (a very nice package) are quite
 large and cause Emacs to hang. So, I sought to create something that would (a)
 get the full file path to the current buffer and strip the extension, (b) slap
-&amp;ldquo;.html&amp;rdquo; to the end of this string, (c) open the file in Firefox, and (d)
+“.html” to the end of this string, (c) open the file in Firefox, and (d)
 assign this function to a keybinding. Here is what I came up with:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-EmacsLisp&#34; data-lang=&#34;EmacsLisp&#34;&gt;(defun open-html-firefox ()
+&lt;pre&gt;&lt;code&gt;(defun open-html-firefox ()
 
   (interactive)
 
-  &lt;span style=&#34;color:#75715e&#34;&gt;; create the new string of the file to open&lt;/span&gt;
-  (setq file-string (&lt;span style=&#34;color:#a6e22e&#34;&gt;concat&lt;/span&gt; (file-name-sans-extension (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-file-name&lt;/span&gt;)) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.html&amp;#34;&lt;/span&gt;))
+  ; create the new string of the file to open
+  (setq file-string (concat (file-name-sans-extension (buffer-file-name)) &amp;quot;.html&amp;quot;))
 
-  &lt;span style=&#34;color:#75715e&#34;&gt;; execute command&lt;/span&gt;
-  (shell-command (&lt;span style=&#34;color:#a6e22e&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;firefox &amp;#34;&lt;/span&gt; file-string)))
+  ; execute command
+  (shell-command (concat &amp;quot;firefox &amp;quot; file-string)))
 
 
-  &lt;span style=&#34;color:#75715e&#34;&gt;; assign this function to a keybinding in markdown mode&lt;/span&gt;
-  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;markdown-mode-hook&lt;/span&gt;
+  ; assign this function to a keybinding in markdown mode
+  (add-hook &amp;#39;markdown-mode-hook
     (lambda ()
-      (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c f&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;open-html-firefox&lt;/span&gt;)))
+      (local-set-key (kbd &amp;quot;C-c f&amp;quot;) &amp;#39;open-html-firefox)))
 
-  &lt;span style=&#34;color:#75715e&#34;&gt;; assign this function to a keybinding in org mode&lt;/span&gt;
-  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-mode-hook&lt;/span&gt;
+  ; assign this function to a keybinding in org mode
+  (add-hook &amp;#39;org-mode-hook
             (lambda ()
-              (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c f&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;open-html-firefox&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+              (local-set-key (kbd &amp;quot;C-c f&amp;quot;) &amp;#39;open-html-firefox)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In my dotfile, the function has documentation, but I removed it for this post
-since I&amp;rsquo;m explaining everything in detail. The function itself is quite short
+since I’m explaining everything in detail. The function itself is quite short
 and consists of mainly two things: (a) creating a variable called
-&lt;code&gt;file-string&lt;/code&gt;&lt;sup&gt;3&lt;/sup&gt; and (b) opening this string (which is an .html
+&lt;code&gt;file-string&lt;/code&gt;&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt; and (b) opening this string (which is an .html
 file) in Firefox with a command.&lt;/p&gt;
-
 &lt;p&gt;Originally I was using&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt; (setq file-string (replace-regexp-in-string &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\.Rmd&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.html&amp;#34;&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;buffer-file-name&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code&gt;(setq file-string (replace-regexp-in-string &amp;quot;\.Rmd&amp;quot; &amp;quot;.html&amp;quot; (buffer-file-name)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;to create the string, but this obviously only works for .Rmd files. Also, I was
 not initially aware of the &lt;code&gt;file-name-sans-extension&lt;/code&gt; function which turned out
 to be much easier than what I was doing anyway.&lt;/p&gt;
-
-&lt;p&gt;The two &lt;code&gt;add-hook&lt;/code&gt;&amp;rsquo;s just assign &lt;code&gt;open-html-firefox&lt;/code&gt; to keybindings in
+&lt;p&gt;The two &lt;code&gt;add-hook&lt;/code&gt;’s just assign &lt;code&gt;open-html-firefox&lt;/code&gt; to keybindings in
 &lt;code&gt;markdown-mode&lt;/code&gt; and &lt;code&gt;org-mode&lt;/code&gt;. The reason why I use lambdas is because the
-internet told me to;&lt;sup&gt;4&lt;/sup&gt; lo and behold, it doesn&amp;rsquo;t work without lambdas.
-It is possible to assign this function to a global keybinding, but I don&amp;rsquo;t want
+internet told me to;&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt; lo and behold, it doesn’t work without lambdas.
+It is possible to assign this function to a global keybinding, but I don’t want
 to override keybindings on other modes. Something like &lt;code&gt;C-c f&lt;/code&gt; is common enough
-that I assume it&amp;rsquo;s being used elsewhere.&lt;/p&gt;
-
+that I assume it’s being used elsewhere.&lt;/p&gt;
 &lt;p&gt;What would be even better (and simpler) is a function/keybinding that opens a
 file under point directly from &lt;code&gt;helm-find-files&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;add-src-elements&#34;&gt;add-src-elements&lt;/h1&gt;
-
+&lt;/div&gt;
+&lt;div id=&#34;add-src-elements&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;add-src-elements&lt;/h1&gt;
 &lt;p&gt;This function adds the text&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;#+BEGIN_SRC
-#+END_SRC
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;to the current buffer and places the cursor just after &amp;ldquo;#+BEGIN_SRC&amp;rdquo;. This block
+#+END_SRC&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to the current buffer and places the cursor just after “#+BEGIN_SRC”. This block
 structure is used to embed code .org files, which I use to create presentations.
 For example, a block may contain something like&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;#+BEGIN_SRC python
 import numpy
 import scipy
 
-x = &#39;Emacs Rocks&#39; # i hope this phrase isn&#39;t trademarked
-#+END_SRC
-&lt;/code&gt;&lt;/pre&gt;
-
+x = &amp;#39;Emacs Rocks&amp;#39; # i hope this phrase isn&amp;#39;t trademarked
+#+END_SRC&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Manually typing &lt;code&gt;#+BEGIN_SRC...&lt;/code&gt;, etc. etc. is tedious, so I simply created a
 function and keybinding to automate this. Here it is:&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-elisp&#34; data-lang=&#34;elisp&#34;&gt;(defun add-src-elements ()
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Make adding #+BEGIN/END _SRC elements easier&amp;#34;&lt;/span&gt;
+&lt;pre&gt;&lt;code&gt;(defun add-src-elements ()
+    &amp;quot;Make adding #+BEGIN/END _SRC elements easier&amp;quot;
     (interactive)
-    (&lt;span style=&#34;color:#a6e22e&#34;&gt;insert&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#+BEGIN_SRC\n#+END_SRC&amp;#34;&lt;/span&gt;)
-    (&lt;span style=&#34;color:#a6e22e&#34;&gt;forward-line&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;-1&lt;/span&gt;)
-    (evil-append-line &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
-    (&lt;span style=&#34;color:#a6e22e&#34;&gt;insert&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt;))
+    (insert &amp;quot;#+BEGIN_SRC\n#+END_SRC&amp;quot;)
+    (forward-line -1)
+    (evil-append-line 1)
+    (insert &amp;quot; &amp;quot;))
     
-  &lt;span style=&#34;color:#75715e&#34;&gt;; set it to a keybinding&lt;/span&gt;
-  (with-eval-after-load &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org&lt;/span&gt;
-    (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;org-mode-hook&lt;/span&gt;
+  ; set it to a keybinding
+  (with-eval-after-load &amp;#39;org
+    (add-hook &amp;#39;org-mode-hook
               (lambda ()
-                (local-set-key (kbd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;C-c s&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;add-src-elements&lt;/span&gt;)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+                (local-set-key (kbd &amp;quot;C-c s&amp;quot;) &amp;#39;add-src-elements)))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;My dotfile looks a little different since I have other &lt;code&gt;org-mode&lt;/code&gt; hooks, but
 this is the gist of it. Again, the internet insists I use
 &lt;code&gt;with-eval-after-load&lt;/code&gt;,&lt;sup&gt;4&lt;/sup&gt; so I obey. This could be improved by looking
-for a previous codeblock (i.e. &lt;code&gt;search-backward&lt;/code&gt;) in the current buffer if one
-exists, getting the language used for the block if it&amp;rsquo;s listed (Python in my
+for a previous codeblock (i.e. &lt;code&gt;search-backward&lt;/code&gt;) in the current buffer if one
+exists, getting the language used for the block if it’s listed (Python in my
 example), and inserting this language name just after &lt;code&gt;#+BEGIN_SRC&lt;/code&gt;. In most
 presentations I only demonstrate concepts in one language, so it would make
-sense to use the previous source block&amp;rsquo;s language if it is listed.&lt;/p&gt;
-
-&lt;h1 id=&#34;emacs-lisp-programming-strats&#34;&gt;Emacs Lisp programming strats&lt;/h1&gt;
-
-&lt;p&gt;When using Emacs Lisp, I&amp;rsquo;ve often had difficultly locating proper functions to
+sense to use the previous source block’s language if it is listed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;emacs-lisp-programming-strats&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Emacs Lisp programming strats&lt;/h1&gt;
+&lt;p&gt;When using Emacs Lisp, I’ve often had difficultly locating proper functions to
 do simple things. For example, in my second function, &lt;code&gt;add-src-elements&lt;/code&gt;, I
 utilize &lt;code&gt;(forward-line -1)&lt;/code&gt;, which serves to move the cursor to the previous
 line. This is something we do all the time in text editors manually. As a
 Spacemacs user, for example, I use &lt;code&gt;j&lt;/code&gt;/&lt;code&gt;k&lt;/code&gt; to navigate between single lines.
 This is where a beautiful feature of Emacs is exposed: &lt;code&gt;describe-key&lt;/code&gt;, which
 will show the function called by any keybinding. To find out what function is
-called by &lt;code&gt;k&lt;/code&gt; (which navigates to the previous line in &lt;code&gt;evil-mode&lt;/code&gt;), I use &lt;code&gt;C-h
-k&lt;/code&gt; to call &lt;code&gt;describe-key&lt;/code&gt;, and then I simply press &lt;code&gt;k&lt;/code&gt;.&lt;/p&gt;
-
+called by &lt;code&gt;k&lt;/code&gt; (which navigates to the previous line in &lt;code&gt;evil-mode&lt;/code&gt;), I use &lt;code&gt;C-h k&lt;/code&gt; to call &lt;code&gt;describe-key&lt;/code&gt;, and then I simply press &lt;code&gt;k&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The function appearing in the help buffer is called &lt;code&gt;evil-previous-line&lt;/code&gt;. While
-this wasn&amp;rsquo;t what I used directly in my custom function, this process often
+this wasn’t what I used directly in my custom function, this process often
 points me to the function I need. Similar useful features include
 &lt;code&gt;describe-function&lt;/code&gt; and &lt;code&gt;describe-variable&lt;/code&gt;. All of these &lt;code&gt;describe-&lt;/code&gt; functions
-contain links to the source code, which demonstrate what&amp;rsquo;s going on under the
+contain links to the source code, which demonstrate what’s going on under the
 hood.&lt;/p&gt;
-
-&lt;h1 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h1&gt;
-
-&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; Please do share if you have better solutions!&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;2&lt;/sup&gt; Which is baffling.&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;3&lt;/sup&gt; Using &lt;code&gt;let&lt;/code&gt; would probably be a better approach than &lt;code&gt;setq&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;sup&gt;4&lt;/sup&gt; A Spacemacs requirement?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;footnotes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Footnotes&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Please do share if you have better solutions!&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Which is baffling.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Using &lt;code&gt;let&lt;/code&gt; would probably be a better approach than &lt;code&gt;setq&lt;/code&gt;.&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;A Spacemacs requirement?&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -752,6 +730,113 @@ push the changes to this repository when I update my CV.
       
       <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mhaffner.github.io/slides/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/slides/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Presentations – Matthew Haffner – PhD Candidate, Graduate Research Assistant&lt;/title&gt;
+
+        &lt;meta charset=&#34;utf-8&#34; /&gt;
+    &lt;meta content=&#39;text/html; charset=utf-8&#39; http-equiv=&#39;Content-Type&#39;&gt;
+    &lt;meta http-equiv=&#39;X-UA-Compatible&#39; content=&#39;IE=edge&#39;&gt;
+    &lt;meta name=&#39;viewport&#39; content=&#39;width=device-width, initial-scale=1.0, maximum-scale=1.0&#39;&gt;
+
+    
+    &lt;meta name=&#34;description&#34; content=&#34;PhD Candidate, Graduate Research Assistant&#34;&gt;
+    &lt;meta property=&#34;og:description&#34; content=&#34;PhD Candidate, Graduate Research Assistant&#34; /&gt;
+    
+    &lt;meta name=&#34;author&#34; content=&#34;Matthew Haffner&#34; /&gt;
+
+    
+    &lt;meta property=&#34;og:title&#34; content=&#34;Presentations&#34; /&gt;
+    &lt;meta property=&#34;twitter:title&#34; content=&#34;Presentations&#34; /&gt;
+    
+
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src=&#34;http://html5shiv.googlecode.com/svn/trunk/html5.js&#34;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+
+    &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://mhaffner.github.io/style.css&#34; /&gt;
+    &lt;link rel=&#34;alternate&#34; type=&#34;application/rss+xml&#34; title=&#34;Matthew Haffner - PhD Candidate, Graduate Research Assistant&#34; href=&#34;https://mhaffner.github.io/feed.xml&#34; /&gt;
+
+    &lt;!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div class=&#34;wrapper-masthead&#34;&gt;
+      &lt;div class=&#34;container&#34;&gt;
+        &lt;header class=&#34;masthead clearfix&#34;&gt;
+          &lt;a href=&#34;https://mhaffner.github.io/&#34; class=&#34;site-avatar&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png&#34; /&gt;&lt;/a&gt;
+
+          &lt;div class=&#34;site-info&#34;&gt;
+            &lt;h1 class=&#34;site-name&#34;&gt;&lt;a href=&#34;https://mhaffner.github.io/&#34;&gt;Matthew Haffner&lt;/a&gt;&lt;/h1&gt;
+            &lt;p class=&#34;site-description&#34;&gt;PhD Candidate, Graduate Research Assistant&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;nav&gt;
+            &lt;a href=&#34;https://mhaffner.github.io/&#34;&gt;Blog&lt;/a&gt;
+            &lt;a href=&#34;https://mhaffner.github.io/about&#34;&gt;About&lt;/a&gt;
+            &lt;a href=&#34;https://mhaffner.github.io/presentations&#34;&gt;Presentations&lt;/a&gt;
+          &lt;/nav&gt;
+        &lt;/header&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&#34;main&#34; role=&#34;main&#34; class=&#34;container&#34;&gt;
+      &lt;article class=&#34;page&#34;&gt;
+
+  &lt;h1&gt;Presentations&lt;/h1&gt;
+
+  &lt;div class=&#34;entry&#34;&gt;
+    &lt;p&gt;This  is a  list of  recent  conference presentations.  All have  been
+created with &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;. Feel
+free to contact me if you have any questions!&lt;/p&gt;
+
+&lt;h1 id=&#34;2017&#34;&gt;2017&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;shp2nosql.html&#34;&gt;The development of shp2nosql: Command line tools for spatial data and
+NoSQL databases&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mhaffner.github.io/presentations/shp2nosql.html&#34;&gt;The development of shp2nosql: Command line tools for spatial data and
+NoSQL databases&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/article&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&#34;wrapper-footer&#34;&gt;
+      &lt;div class=&#34;container&#34;&gt;
+        &lt;footer class=&#34;footer&#34;&gt;
+          
+&lt;a href=&#34;mailto:matt.haffner@okstate.edu&#34;&gt;&lt;i class=&#34;svg-icon email&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+
+
+&lt;a href=&#34;https://github.com/mhaffner&#34;&gt;&lt;i class=&#34;svg-icon github&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+
+
+
+
+&lt;a href=&#34;https://www.twitter.com/geo_haffner&#34;&gt;&lt;i class=&#34;svg-icon twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+
+
+
+        &lt;/footer&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
     </item>
     
   </channel>
