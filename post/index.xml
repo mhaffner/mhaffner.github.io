@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>The geography of Oklahoma State football recruiting: Technical approach</title>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</link>
+      <pubDate>Mon, 28 Jan 2019 13:09:13 -0600</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</guid>
+      <description>Introduction In this piece I’m going to describe in detail the technical aspects behind a recent a recent project that I wrote about on the geography of Oklahoma State football’s recruiting practices. This project involves extracting web content, processing text, geocoding, web mapping, and some basic exploratory spatial data analysis. I met a number of unexpected challenges along the way and I hope this will serve to help others facing similar issues.</description>
+    </item>
+    
+    <item>
       <title>Pi-hole troubleshooting: An overview of my recent installation</title>
       <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
