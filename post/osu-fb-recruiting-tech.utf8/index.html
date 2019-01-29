@@ -134,9 +134,9 @@
   <meta property="og:description" content="Web scraping, text processing, mapping, and exploratory spatial data analysis"><meta property="og:image" content="/img/prof-pic-edit.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-01-28T13:09:13-06:00">
+  <meta property="article:published_time" content="2019-01-29T13:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-01-28T13:09:13-06:00">
+  <meta property="article:modified_time" content="2019-01-29T13:00:00&#43;00:00">
   
 
   
@@ -377,8 +377,8 @@
     
 
 
-<meta content="2019-01-28 13:09:13 -0600 CST" itemprop="datePublished">
-<meta content="2019-01-28 13:09:13 -0600 CST" itemprop="dateModified">
+<meta content="2019-01-29 13:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-01-29 13:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -391,7 +391,7 @@
     
       
     
-    <time>Mon, Jan 28, 2019</time>
+    <time>Tue, Jan 29, 2019</time>
   </span>
   
 
@@ -476,14 +476,13 @@
 
 <h1 id="introduction">Introduction</h1>
 
-<p>In this piece I&rsquo;m going to describe in detail the technical aspects behind a
-recent a recent project that I wrote about on the geography of Oklahoma State
-football&rsquo;s recruiting practices. This project involves extracting web content,
-processing text, geocoding, web mapping, and some basic exploratory spatial data
-analysis. I met a number of unexpected challenges along the way and I hope this
-will serve to help others facing similar issues. These scripts are also
-available in full in a <a href="https://gitlab.com/mhaffner/okstate-fb-recruiting" target="_blank">repository on
-GitLab</a>.</p>
+<p>In this piece I&rsquo;m going to describe the technical aspects behind a recent
+project where I wrote about the geography of Oklahoma State football&rsquo;s
+recruiting practices. This project involves extracting web content, processing
+text, geocoding, web mapping, and some basic exploratory spatial data analysis.
+I met a number of unexpected challenges along the way and I hope this will serve
+to help others facing similar issues. These scripts are also available in full
+in a <a href="https://gitlab.com/mhaffner/okstate-fb-recruiting" target="_blank">repository on GitLab</a>.</p>
 
 <h1 id="extracting-and-processing-text-from-the-web">Extracting and processing text from the web</h1>
 
@@ -639,16 +638,31 @@ write.csv(agg.df, &quot;osu-recruits.csv&quot;, row.names = FALSE)
 
 <p>For this part, some different libraries are needed. In my repository this is
 actually the start of a separate script, but for the sake of brevity I omit
-redundant lines here (e.g., <code>setwd</code>). The library <code>randomcoloR</code> is used to
-assign colors to points, and <code>leaflet</code> is used to create the web maps.</p>
+redundant lines (e.g., <code>setwd</code>). The library <code>randomcoloR</code> is used first to
+assign colors to points. Selecting 14 distinct yet visually appealing colors is
+surprisingly difficult, but the <code>randomcoloR</code> library does this quite well. As
+the name implies, it generates colors randomly, so I use <code>set.seed(3)</code> to &ldquo;fix&rdquo;
+the scheme to what I deemed desirable. I tested other schemes with <code>set.seed(1)</code>
+and <code>set.seed(2)</code>, but didn&rsquo;t like these as much. Fixing the color scheme is
+important since I want to use the same color scheme on every map which is each
+in a different scripts. I simply use <code>set.seed(3)</code> prior to the line with the
+<code>distinctColorPalette</code> function, and this replicates my desired scheme. This
+only needs to be done once, and I save the result as an R dataset to avoid
+having to <code>set.seed(3)</code> in each other script.</p>
 
 <pre><code class="language-r">library(randomcoloR)
-library(leaflet)
+
+set.seed(3)
+color.pal &lt;- sample(distinctColorPalette(length(years)))
+
+# save colors for future use
+saveRDS(color.pal, file=&quot;colors.Rda&quot;)
 </code></pre>
 
-<p>First, I load the data.</p>
+<p>The R library <code>leaflet</code> is used to create the web maps. First, I load the data.</p>
 
 <pre><code class="language-r"># load data
+library(leaflet)
 recruits &lt;- data.frame(read.csv(&quot;osu-recruits.csv&quot;))
 </code></pre>
 
@@ -658,26 +672,6 @@ necessary column in the <code>recruits</code> data frame.</p>
 
 <pre><code class="language-r"># get unique years as a variable
 years &lt;- unique(recruits$year)
-</code></pre>
-
-<p>Following this, I generate the color scheme used throughout the study. Selecting
-14 distinct yet visually appealing colors is surprisingly difficult, but the
-<code>randomcoloR</code> library does this quite well. As the name implies, it generates
-colors randomly, so I use <code>set.seed(3)</code> to &ldquo;fix&rdquo; the scheme to what I deemed
-desirable. I tested other schemes with <code>set.seed(1)</code> and <code>set.seed(2)</code>, but
-didn&rsquo;t like these as much. Fixing the color scheme is important since I want to
-use the same color scheme in other scripts. I simply use <code>set.seed(3)</code> prior to
-the line with the <code>distinctColorPalette</code> function, and this replicates my
-desired scheme.</p>
-
-<pre><code class="language-r"># create color palette use the randomcoloR library to generate distinct colors -
-# this works betters than functions like &quot;rainbow&quot;
-#
-# I tried a few different random seeds to get this order - this avoids similarly
-# looking colors adjacent to one another (by year)
-set.seed(3)
-colors &lt;- colorFactor(sample(distinctColorPalette(length(years))),
-                      domain = c(min(years):max(years)))
 </code></pre>
 
 <p>To create the web maps I use the <code>leaflet</code> package which has great documentation
@@ -696,7 +690,14 @@ points visible. I use Stamen&rsquo;s Toner tiles (as opposed to the default Open
 Street Map tiles) which use only black to avoid conflicts with the 14 different
 colors of the points.</p>
 
-<pre><code class="language-r">map &lt;- leaflet(width = &quot;100%&quot;, height = &quot;650px&quot;) %&gt;%
+<pre><code class="language-r"># load color scheme
+color.pal &lt;- readRDS(&quot;colors.Rda&quot;)
+
+# create color palette with domain
+colors &lt;- colorFactor((color.pal),
+                      domain = c(min(years):max(years)))
+
+map &lt;- leaflet(width = &quot;100%&quot;, height = &quot;650px&quot;) %&gt;%
   addProviderTiles(providers$Stamen.Toner) %&gt;%
   setView(lng = -98.33, lat = 38.37, zoom = 4)
 </code></pre>
@@ -740,7 +741,7 @@ snippet displays the map, adds layer control, and adds a legend.</p>
 <h3 id="recruits-hometowns-2006-2019">Recruits&rsquo; hometowns (2006 - 2019)</h3>
 
 <p></div>
-preserve217ff3702ccfe00e</p>
+preserve7fb5ed2d0f795a1e</p>
 
 <p>Originally I used popup markers so that you could click on a point and
 see the player&rsquo;s name and hometown, but since multiple players can
@@ -804,7 +805,7 @@ alone since there are no overlapping points.</p>
 <h3 id="mean-centers-of-recruits-hometowns-2006-2019">Mean centers of recruits&rsquo; hometowns (2006 - 2019)</h3>
 
 <p></div>
-preservedd2130b47a74291f</p>
+preservece1941a98edb5306</p>
 
 <h2 id="median-centers">Median centers</h2>
 
@@ -844,7 +845,7 @@ leaflet(width = &quot;100%&quot;, height = &quot;500px&quot;) %&gt;%
 <h3 id="median-centers-of-recruits-hometowns-2006-2019">Median centers of recruits&rsquo; hometowns (2006 - 2019)</h3>
 
 <p></div>
-preserveb514b7c0b2163ece</p>
+preserveb9c9541db26a57a3</p>
 
 <h2 id="dispersion">Dispersion</h2>
 
@@ -924,9 +925,8 @@ distance by default when a geographic coordinate system is used.</p>
     }
   }
 
-  # set colors
-  set.seed(3)
-  colors &lt;- sample(distinctColorPalette(length(years)))
+  # load color scheme
+  colors &lt;- readRDS(&quot;colors.Rda&quot;)
 
   # set up plot space
   par(mfrow=c(5,3))
@@ -947,7 +947,7 @@ distance by default when a geographic coordinate system is used.</p>
 <h3 id="distance-and-direction-of-recruits-hometowns-to-stillwater">Distance and direction of recruits&rsquo; hometowns to Stillwater</h3>
 
 <p></div>
-<img src="osu-fb-recruiting-tech_files/figure-html/unnamed-chunk-22-1.png" width="100%" /></p>
+<img src="osu-fb-recruiting-tech_files/figure-html/unnamed-chunk-21-1.png" width="100%" /></p>
 
 <p>One problem incurred here is that the scale is not consistent from plot to plot.
 This makes it look as though the distance from Stillwater is low in 2014, when
@@ -1189,7 +1189,7 @@ Rivals only reaches back to 2002.</p>
           
           <li><a href="/post/osu-fb-recruiting-tech.knit/">The geography of Oklahoma State football recruiting: Technical approach</a></li>
           
-          <li><a href="/draft/osu-fb-recruiting/">The geography of Oklahoma State football recruiting</a></li>
+          <li><a href="/post/osu-fb-recruiting-tech/">The geography of Oklahoma State football recruiting: Technical approach</a></li>
           
         </ul>
       </div>
