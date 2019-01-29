@@ -4,22 +4,6 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/draft/osu-fb-recruiting/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://mhaffner.github.io/post/pi-hole-troubleshooting/</loc>
       <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     </url>
@@ -205,15 +189,6 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/draft/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://mhaffner.github.io/tags/emacs/</loc>
       <lastmod>2018-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -252,15 +227,6 @@
     
       <loc>https://mhaffner.github.io/tags/github/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/leaflet/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -313,15 +279,6 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/r/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://mhaffner.github.io/tags/raspberry-pi/</loc>
       <lastmod>2019-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -333,15 +290,6 @@
     
       <loc>https://mhaffner.github.io/tags/shapefile/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/spatial-statistics/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -367,53 +315,8 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/college-football/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/geography/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/recruiting/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://mhaffner.github.io/tags/shp2snoql/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/web-mapping/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/web-scraping/</loc>
-      <lastmod>2019-01-28T13:09:13-06:00</lastmod>
       <priority>0</priority>
     </url>
     
