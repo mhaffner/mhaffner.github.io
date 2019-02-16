@@ -2,27 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>geography on Matthew Haffner</title>
-    <link>/tags/geography/</link>
+    <link>https://mhaffner.github.io/tags/geography/</link>
     <description>Recent content in geography on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
-    <lastBuildDate>Fri, 25 Jan 2019 13:09:13 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 13:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/geography/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mhaffner.github.io/tags/geography/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The Geography of Oklahoma State Football Recruiting</title>
-      <link>/draft/osu-fb-recruiting/</link>
-      <pubDate>Fri, 25 Jan 2019 13:09:13 -0600</pubDate>
+      <title>The geography of Oklahoma State football recruiting: Technical approach</title>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</link>
+      <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>/draft/osu-fb-recruiting/</guid>
-      <description>Anyone who reads PFB articles on recruiting or listens to Gundy’s press conferences around signing day knows that Oklahoma State’s recruiting practices are heavily scrutinized.
-Whereas Gundy was energetic and highly motivated during his
-…not to mention creating some cool visuals, etc.
-Rivals
-Yet, apart from these two, the mean and median centers have changed remarkably little over the past 14 years.</description>
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</guid>
+      <description>Introduction In this piece I’m going to describe the technical aspects behind a recent project where I wrote about the geography of Oklahoma State football’s recruiting practices. This project involves extracting web content, processing text, geocoding, web mapping, and some basic exploratory spatial data analysis. I met a number of unexpected challenges along the way and I hope this will serve to help others facing similar issues.</description>
     </item>
     
   </channel>

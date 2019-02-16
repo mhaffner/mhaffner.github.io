@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>The geography of Oklahoma State football recruiting</title>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting/</link>
+      <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting/</guid>
+      <description>Introduction Anyone who listens to Gundy’s press conferences around signing day or reads Pistol’s Firing Blog (PFB) articles on recruiting (and their corresponding comments) knows that Oklahoma State Football’s recruiting practices are heavily scrutinized. The writers of PFB have pointed out that Gundy’s attitude toward recruiting has seemingly changed. Where the mantra used to be “recruiting is the most important thing we do,” it now seems less important.</description>
+    </item>
+    
+    <item>
+      <title>The geography of Oklahoma State football recruiting: Technical approach</title>
+      <link>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</link>
+      <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
+      
+      <guid>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</guid>
+      <description>Introduction In this piece I’m going to describe the technical aspects behind a recent project where I wrote about the geography of Oklahoma State football’s recruiting practices. This project involves extracting web content, processing text, geocoding, web mapping, and some basic exploratory spatial data analysis. I met a number of unexpected challenges along the way and I hope this will serve to help others facing similar issues.</description>
+    </item>
+    
+    <item>
       <title>Pi-hole troubleshooting: An overview of my recent installation</title>
       <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
@@ -28,7 +46,7 @@ Network issues After initial installation, I could not access the Pi-hole admin 
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mhaffner.github.io/post/useful-emacs-lisp/</guid>
-      <description>I wrote this post to demonstrate how I&amp;rsquo;m using Emacs Lisp to do some useful things. This is post aimed at beginners and those interested (e.g., Vim users potentially) in how Emacs can be extended to automate some simple tasks. Advanced users will probably have more elegant (or more complete) solutions than what I have here,1 so with that in mind I will focus more on the motivations, thought processes, and progressions I&amp;rsquo;ve gone through with these functions.</description>
+      <description>I wrote this post to demonstrate how I’m using Emacs Lisp to do some useful things. This is post aimed at beginners and those interested (e.g., Vim users potentially) in how Emacs can be extended to automate some simple tasks. Advanced users will probably have more elegant (or more complete) solutions than what I have here,1 so with that in mind I will focus more on the motivations, thought processes, and progressions I’ve gone through with these functions.</description>
     </item>
     
     <item>
