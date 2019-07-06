@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matthew Haffner on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/</link>
+    <link>/</link>
     <description>Recent content in Matthew Haffner on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,22 +12,22 @@
     
     <item>
       <title>The geography of Oklahoma State football recruiting</title>
-      <link>https://mhaffner.github.io/draft/osu-fb-recruiting/</link>
+      <link>/draft/osu-fb-recruiting/</link>
       <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/draft/osu-fb-recruiting/</guid>
+      <guid>/draft/osu-fb-recruiting/</guid>
       <description>
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
@@ -156,7 +156,7 @@ Stillwater by year.&lt;/p&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
 &lt;h3 id=&#34;distance-and-direction-of-recruits-hometowns-to-stillwater&#34;&gt;Distance and direction of recruits’ hometowns to Stillwater&lt;/h3&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://mhaffner.github.io/draft/osu-fb-recruiting_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/draft/osu-fb-recruiting_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This plot displays some intriguing patterns. In each of the years 2007, 2010,
 and 2011 Oklahoma State signed &lt;em&gt;only one player&lt;/em&gt; from north of Stillwater (2015
 appears this way too, but actually two signees came from El Dorado, KS),
@@ -221,22 +221,22 @@ for a follow-up study, feel free to point it out in the comments!&lt;/p&gt;
     
     <item>
       <title>The geography of Oklahoma State football recruiting: Technical approach</title>
-      <link>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</link>
+      <link>/post/osu-fb-recruiting-tech/</link>
       <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</guid>
+      <guid>/post/osu-fb-recruiting-tech/</guid>
       <description>
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://mhaffner.github.io/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://mhaffner.github.io/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
@@ -647,7 +647,7 @@ distance by default when a geographic coordinate system is used.&lt;/p&gt;
 &lt;div style=&#34;text-align: center;&#34;&gt;
 &lt;h3 id=&#34;distance-and-direction-of-recruits-hometowns-to-stillwater&#34;&gt;Distance and direction of recruits’ hometowns to Stillwater&lt;/h3&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://mhaffner.github.io/post/osu-fb-recruiting-tech_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/osu-fb-recruiting-tech_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One problem incurred here is that the scale is not consistent from plot to plot.
 This makes it look as though the distance from Stillwater is low in 2014, when
 in reality its standard deviation is low but its median distance from Stillwater
@@ -723,10 +723,10 @@ Rivals only reaches back to 2002.&lt;/p&gt;
     
     <item>
       <title>Pi-hole troubleshooting: An overview of my recent installation</title>
-      <link>https://mhaffner.github.io/post/pi-hole-troubleshooting/</link>
+      <link>/post/pi-hole-troubleshooting/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/pi-hole-troubleshooting/</guid>
+      <guid>/post/pi-hole-troubleshooting/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -846,10 +846,10 @@ from time to time. Well self, see you in a year or so! You owe me
     
     <item>
       <title>Doing useful things with Emacs Lisp</title>
-      <link>https://mhaffner.github.io/post/useful-emacs-lisp/</link>
+      <link>/post/useful-emacs-lisp/</link>
       <pubDate>Sun, 25 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/useful-emacs-lisp/</guid>
+      <guid>/post/useful-emacs-lisp/</guid>
       <description>
 
 
@@ -1001,46 +1001,46 @@ hood.&lt;/p&gt;
     
     <item>
       <title>A place-based analysis of #BlackLivesMatter and counter-protest content on Twitter</title>
-      <link>https://mhaffner.github.io/publication/blm-tweets/</link>
+      <link>/publication/blm-tweets/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/publication/blm-tweets/</guid>
+      <guid>/publication/blm-tweets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A spatial analysis of non-English Twitter activity in Houston, TX</title>
-      <link>https://mhaffner.github.io/publication/non-english-tweets/</link>
+      <link>/publication/non-english-tweets/</link>
       <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/publication/non-english-tweets/</guid>
+      <guid>/publication/non-english-tweets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A spatial analysis of non-English Twitter activity in Houston, TX</title>
-      <link>https://mhaffner.github.io/talk/non-english-tweets/</link>
+      <link>/talk/non-english-tweets/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 -0600</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/non-english-tweets/</guid>
+      <guid>/talk/non-english-tweets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Location-based social media behaviors and perception: Views of university students</title>
-      <link>https://mhaffner.github.io/talk/lbsm-survey/</link>
+      <link>/talk/lbsm-survey/</link>
       <pubDate>Wed, 25 Oct 2017 00:00:00 -0500</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/lbsm-survey/</guid>
+      <guid>/talk/lbsm-survey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Why I switched from Ubuntu to Manjaro (Arch Linux derivative)</title>
-      <link>https://mhaffner.github.io/post/arch-linux/</link>
+      <link>/post/arch-linux/</link>
       <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/arch-linux/</guid>
+      <guid>/post/arch-linux/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;EDIT: I&amp;rsquo;ve made several modifications to the original piece based on helpful
@@ -1313,28 +1313,28 @@ than on Windows.&lt;/p&gt;
     
     <item>
       <title>Location based social media behavior and perception: Views of university students</title>
-      <link>https://mhaffner.github.io/publication/lbsm-survey/</link>
+      <link>/publication/lbsm-survey/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/publication/lbsm-survey/</guid>
+      <guid>/publication/lbsm-survey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GIS-based modeling of tornado siren sound propagation: Refining spatial extent and coverage estimations</title>
-      <link>https://mhaffner.github.io/publication/tornado-sirens/</link>
+      <link>/publication/tornado-sirens/</link>
       <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/publication/tornado-sirens/</guid>
+      <guid>/publication/tornado-sirens/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The development of shp2nosql</title>
-      <link>https://mhaffner.github.io/post/shp2nosql/</link>
+      <link>/post/shp2nosql/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/shp2nosql/</guid>
+      <guid>/post/shp2nosql/</guid>
       <description>&lt;p&gt;In the early days of my dissertation, I was collecting Twitter data but had no
 idea how to store, manage, or query these data. First, I tried PostgreSQL with
 PostGIS. I had been wanting to learn PostGIS anyway, not to mention a suitable
@@ -1387,10 +1387,10 @@ found &lt;a href=&#34;https://mhaffner.github.io/presentations/shp2nosql.html&#3
     
     <item>
       <title>The Burnination of the Wordpress</title>
-      <link>https://mhaffner.github.io/post/first-post/</link>
+      <link>/post/first-post/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/post/first-post/</guid>
+      <guid>/post/first-post/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;m currently in the process of moving my blog to GitHub pages. I&amp;rsquo;m
@@ -1435,118 +1435,55 @@ push the changes to this repository when I update my CV.
     </item>
     
     <item>
-      <title>The development of shp2nosql: Command line tools for spatial data and NoSQL databases</title>
-      <link>https://mhaffner.github.io/talk/shp2nosql/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0600</pubDate>
+      <title>The Burnination of the Wordpress</title>
+      <link>/wiki/pc-build/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/talk/shp2nosql/</guid>
-      <description></description>
+      <guid>/wiki/pc-build/</guid>
+      <description>&lt;p&gt;I could have posted this to PCPartPicker or Reddit (both of which I love) but I
+like having everything self-contained here.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://mhaffner.github.io/slides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Reading List</title>
+      <link>/wiki/books/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/slides/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Presentations – Matthew Haffner – PhD Candidate, Graduate Research Assistant&lt;/title&gt;
+      <guid>/wiki/books/</guid>
+      <description>
 
-        &lt;meta charset=&#34;utf-8&#34; /&gt;
-    &lt;meta content=&#39;text/html; charset=utf-8&#39; http-equiv=&#39;Content-Type&#39;&gt;
-    &lt;meta http-equiv=&#39;X-UA-Compatible&#39; content=&#39;IE=edge&#39;&gt;
-    &lt;meta name=&#39;viewport&#39; content=&#39;width=device-width, initial-scale=1.0, maximum-scale=1.0&#39;&gt;
+&lt;h2 id=&#34;2018&#34;&gt;2018&lt;/h2&gt;
 
-    
-    &lt;meta name=&#34;description&#34; content=&#34;PhD Candidate, Graduate Research Assistant&#34;&gt;
-    &lt;meta property=&#34;og:description&#34; content=&#34;PhD Candidate, Graduate Research Assistant&#34; /&gt;
-    
-    &lt;meta name=&#34;author&#34; content=&#34;Matthew Haffner&#34; /&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;That Holy Anarchist: Reflections on Christianity &amp;amp; Anarchism&lt;/em&gt;&lt;sup&gt;1&lt;sup&gt; by Mark Van Steenwyk&lt;/li&gt;
+&lt;/ul&gt;
 
-    
-    &lt;meta property=&#34;og:title&#34; content=&#34;Presentations&#34; /&gt;
-    &lt;meta property=&#34;twitter:title&#34; content=&#34;Presentations&#34; /&gt;
-    
+&lt;h2 id=&#34;2017&#34;&gt;2017&lt;/h2&gt;
 
-    &lt;!--[if lt IE 9]&gt;
-      &lt;script src=&#34;http://html5shiv.googlecode.com/svn/trunk/html5.js&#34;&gt;&lt;/script&gt;
-    &lt;![endif]--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Righteous Mind: Why Good People are Divided by Politics and Religion&lt;/em&gt; by Jonathan Haidt&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://mhaffner.github.io/style.css&#34; /&gt;
-    &lt;link rel=&#34;alternate&#34; type=&#34;application/rss+xml&#34; title=&#34;Matthew Haffner - PhD Candidate, Graduate Research Assistant&#34; href=&#34;https://mhaffner.github.io/feed.xml&#34; /&gt;
+&lt;h2 id=&#34;2016&#34;&gt;2016&lt;/h2&gt;
 
-    &lt;!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --&gt;
-  &lt;/head&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Racism Without Racists: Color-blind Racism and the Persistence of Racial Inequality in America&lt;/em&gt; by Eduardo Bonilla-Silva&lt;/p&gt;&lt;/li&gt;
 
-  &lt;body&gt;
-    &lt;div class=&#34;wrapper-masthead&#34;&gt;
-      &lt;div class=&#34;container&#34;&gt;
-        &lt;header class=&#34;masthead clearfix&#34;&gt;
-          &lt;a href=&#34;https://mhaffner.github.io/&#34; class=&#34;site-avatar&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png&#34; /&gt;&lt;/a&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;American Apartheid: Segregation and the Making of the Underclass&lt;/em&gt; by Douglas Massey and Nancy Denton&lt;/p&gt;&lt;/li&gt;
 
-          &lt;div class=&#34;site-info&#34;&gt;
-            &lt;h1 class=&#34;site-name&#34;&gt;&lt;a href=&#34;https://mhaffner.github.io/&#34;&gt;Matthew Haffner&lt;/a&gt;&lt;/h1&gt;
-            &lt;p class=&#34;site-description&#34;&gt;PhD Candidate, Graduate Research Assistant&lt;/p&gt;
-          &lt;/div&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;American Indian Ethnic Renewal: Politics and the Resurgence of Identity&lt;/em&gt; by Joane Nagel&lt;/p&gt;&lt;/li&gt;
 
-          &lt;nav&gt;
-            &lt;a href=&#34;https://mhaffner.github.io/&#34;&gt;Blog&lt;/a&gt;
-            &lt;a href=&#34;https://mhaffner.github.io/about&#34;&gt;About&lt;/a&gt;
-            &lt;a href=&#34;https://mhaffner.github.io/presentations&#34;&gt;Presentations&lt;/a&gt;
-          &lt;/nav&gt;
-        &lt;/header&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Free Software, Free Society: Selected Essays of Richard M. Stallman&lt;/em&gt; edited by Joshua Gay&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;div id=&#34;main&#34; role=&#34;main&#34; class=&#34;container&#34;&gt;
-      &lt;article class=&#34;page&#34;&gt;
+&lt;h2 id=&#34;2015&#34;&gt;2015&lt;/h2&gt;
 
-  &lt;h1&gt;Presentations&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Moonwalking with Einstein: The Art and Science of Remembering Everything&lt;/em&gt; by Joshua Foer&lt;/li&gt;
+&lt;/ul&gt;
 
-  &lt;div class=&#34;entry&#34;&gt;
-    &lt;p&gt;This  is a  list of  recent  conference presentations.  All have  been
-created with &lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;reveal.js&lt;/a&gt;. Feel
-free to contact me if you have any questions!&lt;/p&gt;
-
-&lt;h1 id=&#34;2017&#34;&gt;2017&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;shp2nosql.html&#34;&gt;The development of shp2nosql: Command line tools for spatial data and
-NoSQL databases&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://mhaffner.github.io/presentations/shp2nosql.html&#34;&gt;The development of shp2nosql: Command line tools for spatial data and
-NoSQL databases&lt;/a&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/article&gt;
-
-    &lt;/div&gt;
-
-    &lt;div class=&#34;wrapper-footer&#34;&gt;
-      &lt;div class=&#34;container&#34;&gt;
-        &lt;footer class=&#34;footer&#34;&gt;
-          
-&lt;a href=&#34;mailto:matt.haffner@okstate.edu&#34;&gt;&lt;i class=&#34;svg-icon email&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-
-
-&lt;a href=&#34;https://github.com/mhaffner&#34;&gt;&lt;i class=&#34;svg-icon github&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-
-
-
-
-&lt;a href=&#34;https://www.twitter.com/geo_haffner&#34;&gt;&lt;i class=&#34;svg-icon twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;
-
-
-
-        &lt;/footer&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    
-
-  &lt;/body&gt;
-&lt;/html&gt;
+&lt;p&gt;&lt;sup&gt;1&lt;sup&gt; Copyleft, available for free in .pdf form&lt;/p&gt;
 </description>
     </item>
     

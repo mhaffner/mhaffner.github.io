@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Drafts on Matthew Haffner</title>
-    <link>https://mhaffner.github.io/draft/</link>
+    <link>/draft/</link>
     <description>Recent content in Drafts on Matthew Haffner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2018 Matthew Haffner</copyright>
     <lastBuildDate>Tue, 29 Jan 2019 13:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mhaffner.github.io/draft/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The geography of Oklahoma State football recruiting</title>
-      <link>https://mhaffner.github.io/draft/osu-fb-recruiting/</link>
+      <link>/draft/osu-fb-recruiting/</link>
       <pubDate>Tue, 29 Jan 2019 13:00:00 +0000</pubDate>
       
-      <guid>https://mhaffner.github.io/draft/osu-fb-recruiting/</guid>
+      <guid>/draft/osu-fb-recruiting/</guid>
       <description>Introduction Anyone who listens to Gundy’s press conferences around signing day or reads PFB articles on recruiting (and their corresponding comments) knows that Oklahoma State Football’s recruiting practices are heavily scrutinized. The writers of PFB have pointed out that Gundy’s attitude toward recruiting has seemingly changed. Where the mantra used to be “recruiting is the most important thing we do,” it now seems less important.</description>
     </item>
     

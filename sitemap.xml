@@ -4,7 +4,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/draft/osu-fb-recruiting/</loc>
+      <loc>/draft/osu-fb-recruiting/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/osu-fb-recruiting-tech/</loc>
+      <loc>/post/osu-fb-recruiting-tech/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/pi-hole-troubleshooting/</loc>
+      <loc>/post/pi-hole-troubleshooting/</loc>
       <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +28,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/useful-emacs-lisp/</loc>
+      <loc>/post/useful-emacs-lisp/</loc>
       <lastmod>2018-11-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication/blm-tweets/</loc>
+      <loc>/publication/blm-tweets/</loc>
       <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication/non-english-tweets/</loc>
+      <loc>/publication/non-english-tweets/</loc>
       <lastmod>2018-03-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/talk/non-english-tweets/</loc>
+      <loc>/talk/non-english-tweets/</loc>
       <lastmod>2018-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/talk/lbsm-survey/</loc>
+      <loc>/talk/lbsm-survey/</loc>
       <lastmod>2017-10-25T00:00:00-05:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/arch-linux/</loc>
+      <loc>/post/arch-linux/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
     </url>
     
@@ -76,7 +76,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication/lbsm-survey/</loc>
+      <loc>/publication/lbsm-survey/</loc>
       <lastmod>2017-05-18T00:00:00+00:00</lastmod>
     </url>
     
@@ -84,7 +84,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication/tornado-sirens/</loc>
+      <loc>/publication/tornado-sirens/</loc>
       <lastmod>2017-05-17T00:00:00+00:00</lastmod>
     </url>
     
@@ -92,7 +92,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/shp2nosql/</loc>
+      <loc>/post/shp2nosql/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
     </url>
     
@@ -100,7 +100,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/first-post/</loc>
+      <loc>/post/first-post/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
     </url>
     
@@ -108,7 +108,31 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/talk/shp2nosql/</loc>
+      <loc>/wiki/pc-build/</loc>
+      <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/wiki/books/</loc>
+      <lastmod>2017-03-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/wiki/music/</loc>
+      <lastmod>2017-03-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/shp2nosql/</loc>
       <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
@@ -116,7 +140,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/academic/</loc>
+      <loc>/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -124,7 +148,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -132,7 +156,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication/</loc>
+      <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -140,7 +164,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -148,21 +172,21 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/author/admin/</loc>
+      <loc>/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>https://mhaffner.github.io/slides/</loc>
+      <loc>/slides/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication_types/2/</loc>
+      <loc>/publication_types/2/</loc>
       <lastmod>2018-09-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -171,7 +195,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/arch-linux/</loc>
+      <loc>/tags/arch-linux/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -180,7 +204,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/author/</loc>
+      <loc>/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -188,7 +212,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/bash/</loc>
+      <loc>/tags/bash/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -197,7 +221,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -205,7 +229,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/draft/</loc>
+      <loc>/draft/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -214,7 +238,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/emacs/</loc>
+      <loc>/tags/emacs/</loc>
       <lastmod>2018-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -223,7 +247,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/emacs-lisp/</loc>
+      <loc>/tags/emacs-lisp/</loc>
       <lastmod>2018-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -232,7 +256,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/gnu-linux/</loc>
+      <loc>/tags/gnu-linux/</loc>
       <lastmod>2019-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -241,7 +265,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/geojson/</loc>
+      <loc>/tags/geojson/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -250,7 +274,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/github/</loc>
+      <loc>/tags/github/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -259,7 +283,16 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/leaflet/</loc>
+      <loc>/tags/hardware/</loc>
+      <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/leaflet/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -268,7 +301,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/manjaro/</loc>
+      <loc>/tags/manjaro/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -277,7 +310,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/</loc>
+      <loc>/</loc>
       <lastmod>2016-04-20T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -286,7 +319,16 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/nosql/</loc>
+      <loc>/tags/music/</loc>
+      <lastmod>2017-03-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/nosql/</loc>
       <lastmod>2017-04-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -295,7 +337,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/pi-hole/</loc>
+      <loc>/tags/pi-hole/</loc>
       <lastmod>2019-01-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -304,61 +346,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/publication_types/</loc>
-      <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/r/</loc>
-      <lastmod>2019-01-29T13:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/raspberry-pi/</loc>
-      <lastmod>2019-01-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/shapefile/</loc>
-      <lastmod>2017-04-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/spatial-statistics/</loc>
-      <lastmod>2019-01-29T13:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://mhaffner.github.io/tags/wordpress/</loc>
+      <loc>/tags/post/</loc>
       <lastmod>2017-03-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -367,7 +355,16 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/geography/</loc>
+      <loc>/publication_types/</loc>
+      <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -376,7 +373,79 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/shp2snoql/</loc>
+      <loc>/tags/raspberry-pi/</loc>
+      <lastmod>2019-01-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/reading/</loc>
+      <lastmod>2017-03-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/shapefile/</loc>
+      <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/spatial-statistics/</loc>
+      <lastmod>2019-01-29T13:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/wiki/</loc>
+      <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/wordpress/</loc>
+      <lastmod>2017-03-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/geography/</loc>
+      <lastmod>2019-01-29T13:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/shp2snoql/</loc>
       <lastmod>2017-07-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -385,7 +454,7 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/web-mapping/</loc>
+      <loc>/tags/web-mapping/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -394,8 +463,17 @@
     
     <url>
     
-      <loc>https://mhaffner.github.io/tags/web-scraping/</loc>
+      <loc>/tags/web-scraping/</loc>
       <lastmod>2019-01-29T13:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/wiki/</loc>
+      <lastmod>2017-03-29T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
